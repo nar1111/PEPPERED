@@ -1,0 +1,203 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!687078895 &4343727234628468602
+SpriteAtlas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Merdeka_Atlas
+  m_EditorData:
+    serializedVersion: 2
+    textureSettings:
+      serializedVersion: 2
+      anisoLevel: 1
+      compressionQuality: 50
+      maxTextureSize: 2048
+      textureCompression: 0
+      filterMode: 0
+      generateMipMaps: 0
+      readable: 0
+      crunchedCompression: 0
+      sRGB: 1
+    platformSettings:
+    - serializedVersion: 3
+      m_BuildTarget: DefaultTexturePlatform
+      m_MaxTextureSize: 1024
+      m_ResizeAlgorithm: 0
+      m_TextureFormat: -1
+      m_TextureCompression: 0
+      m_CompressionQuality: 50
+      m_CrunchedCompression: 0
+      m_AllowsAlphaSplitting: 0
+      m_Overridden: 0
+      m_AndroidETC2FallbackOverride: 0
+      m_ForceMaximumCompressionQuality_BC6H_BC7: 0
+    packingSettings:
+      serializedVersion: 2
+      padding: 4
+      blockOffset: 1
+      allowAlphaSplitting: 0
+      enableRotation: 1
+      enableTightPacking: 1
+    secondaryTextureSettings: {}
+    variantMultiplier: 1
+    packables:
+    - {fileID: 2800000, guid: 96872a9a593a943b6844eda552396489, type: 3}
+    - {fileID: 2800000, guid: 20ef4c1210770474786ab1475381e468, type: 3}
+    - {fileID: 2800000, guid: 24ca35ba75872401091d69c1dc1ba8c3, type: 3}
+    - {fileID: 2800000, guid: 918d1aee0d7f0bd429a7d6a5684a5299, type: 3}
+    - {fileID: 2800000, guid: 3d0ee619b99ad48199a9f5043cd63fed, type: 3}
+    - {fileID: 2800000, guid: ea178ca34fa5948e5a54ad70c9cf5b73, type: 3}
+    - {fileID: 2800000, guid: 0361adef916d44e05a919acd52bbe71b, type: 3}
+    - {fileID: 2800000, guid: 4d85e33430c754a859dcfdeec2af7192, type: 3}
+    - {fileID: 2800000, guid: f0b7b8615130d4300ac4ff651f50ee9a, type: 3}
+    - {fileID: 2800000, guid: d1c4813c2f61a45e8b81aefbc4881116, type: 3}
+    totalSpriteSurfaceArea: 1130496
+    bindAsDefault: 1
+    isAtlasV2: 0
+    cachedData: {fileID: 0}
+  m_MasterAtlas: {fileID: 0}
+  m_PackedSprites:
+  - {fileID: 21300010, guid: f0b7b8615130d4300ac4ff651f50ee9a, type: 3}
+  - {fileID: 21300008, guid: f0b7b8615130d4300ac4ff651f50ee9a, type: 3}
+  - {fileID: 21300014, guid: f0b7b8615130d4300ac4ff651f50ee9a, type: 3}
+  - {fileID: 21300012, guid: f0b7b8615130d4300ac4ff651f50ee9a, type: 3}
+  - {fileID: 21300002, guid: f0b7b8615130d4300ac4ff651f50ee9a, type: 3}
+  - {fileID: 21300000, guid: f0b7b8615130d4300ac4ff651f50ee9a, type: 3}
+  - {fileID: 21300006, guid: f0b7b8615130d4300ac4ff651f50ee9a, type: 3}
+  - {fileID: 21300004, guid: f0b7b8615130d4300ac4ff651f50ee9a, type: 3}
+  - {fileID: 21300004, guid: 20ef4c1210770474786ab1475381e468, type: 3}
+  - {fileID: 21300006, guid: 20ef4c1210770474786ab1475381e468, type: 3}
+  - {fileID: 21300000, guid: 20ef4c1210770474786ab1475381e468, type: 3}
+  - {fileID: 21300002, guid: 20ef4c1210770474786ab1475381e468, type: 3}
+  - {fileID: 21300012, guid: 20ef4c1210770474786ab1475381e468, type: 3}
+  - {fileID: 21300014, guid: 20ef4c1210770474786ab1475381e468, type: 3}
+  - {fileID: 21300008, guid: 20ef4c1210770474786ab1475381e468, type: 3}
+  - {fileID: 21300010, guid: 20ef4c1210770474786ab1475381e468, type: 3}
+  - {fileID: 2797774592272163644, guid: ea178ca34fa5948e5a54ad70c9cf5b73, type: 3}
+  - {fileID: 1426344319037664384, guid: ea178ca34fa5948e5a54ad70c9cf5b73, type: 3}
+  - {fileID: 7785872883002724159, guid: ea178ca34fa5948e5a54ad70c9cf5b73, type: 3}
+  - {fileID: 21300000, guid: 4d85e33430c754a859dcfdeec2af7192, type: 3}
+  - {fileID: 2198514378304918782, guid: 3d0ee619b99ad48199a9f5043cd63fed, type: 3}
+  - {fileID: 5445602330667485508, guid: 3d0ee619b99ad48199a9f5043cd63fed, type: 3}
+  - {fileID: 8158103519275452177, guid: 3d0ee619b99ad48199a9f5043cd63fed, type: 3}
+  - {fileID: 21300010, guid: 3d0ee619b99ad48199a9f5043cd63fed, type: 3}
+  - {fileID: -351571007290369595, guid: 3d0ee619b99ad48199a9f5043cd63fed, type: 3}
+  - {fileID: 21300008, guid: 3d0ee619b99ad48199a9f5043cd63fed, type: 3}
+  - {fileID: 21300014, guid: 3d0ee619b99ad48199a9f5043cd63fed, type: 3}
+  - {fileID: 21300012, guid: 3d0ee619b99ad48199a9f5043cd63fed, type: 3}
+  - {fileID: 21300002, guid: 3d0ee619b99ad48199a9f5043cd63fed, type: 3}
+  - {fileID: 21300000, guid: 3d0ee619b99ad48199a9f5043cd63fed, type: 3}
+  - {fileID: 21300006, guid: 3d0ee619b99ad48199a9f5043cd63fed, type: 3}
+  - {fileID: 21300004, guid: 3d0ee619b99ad48199a9f5043cd63fed, type: 3}
+  - {fileID: 2879092649098731028, guid: 3d0ee619b99ad48199a9f5043cd63fed, type: 3}
+  - {fileID: 21300016, guid: 3d0ee619b99ad48199a9f5043cd63fed, type: 3}
+  - {fileID: -9064266142446507349, guid: 96872a9a593a943b6844eda552396489, type: 3}
+  - {fileID: 4974718432137629066, guid: 96872a9a593a943b6844eda552396489, type: 3}
+  - {fileID: 21300006, guid: 24ca35ba75872401091d69c1dc1ba8c3, type: 3}
+  - {fileID: 21300004, guid: 24ca35ba75872401091d69c1dc1ba8c3, type: 3}
+  - {fileID: 21300002, guid: 24ca35ba75872401091d69c1dc1ba8c3, type: 3}
+  - {fileID: 21300000, guid: 24ca35ba75872401091d69c1dc1ba8c3, type: 3}
+  - {fileID: 21300010, guid: 24ca35ba75872401091d69c1dc1ba8c3, type: 3}
+  - {fileID: 21300008, guid: 24ca35ba75872401091d69c1dc1ba8c3, type: 3}
+  - {fileID: 21300014, guid: d1c4813c2f61a45e8b81aefbc4881116, type: 3}
+  - {fileID: 21300012, guid: d1c4813c2f61a45e8b81aefbc4881116, type: 3}
+  - {fileID: 21300010, guid: d1c4813c2f61a45e8b81aefbc4881116, type: 3}
+  - {fileID: 21300008, guid: d1c4813c2f61a45e8b81aefbc4881116, type: 3}
+  - {fileID: 21300006, guid: d1c4813c2f61a45e8b81aefbc4881116, type: 3}
+  - {fileID: 21300004, guid: d1c4813c2f61a45e8b81aefbc4881116, type: 3}
+  - {fileID: 21300002, guid: d1c4813c2f61a45e8b81aefbc4881116, type: 3}
+  - {fileID: 21300000, guid: d1c4813c2f61a45e8b81aefbc4881116, type: 3}
+  - {fileID: 21300018, guid: d1c4813c2f61a45e8b81aefbc4881116, type: 3}
+  - {fileID: 21300016, guid: d1c4813c2f61a45e8b81aefbc4881116, type: 3}
+  - {fileID: 4612410785167539759, guid: d1c4813c2f61a45e8b81aefbc4881116, type: 3}
+  - {fileID: -3524609682172289541, guid: d1c4813c2f61a45e8b81aefbc4881116, type: 3}
+  - {fileID: 2843956331188619893, guid: 918d1aee0d7f0bd429a7d6a5684a5299, type: 3}
+  - {fileID: 8869099516993924605, guid: 918d1aee0d7f0bd429a7d6a5684a5299, type: 3}
+  - {fileID: 7818912013166810534, guid: 918d1aee0d7f0bd429a7d6a5684a5299, type: 3}
+  - {fileID: -5750461638297070622, guid: 918d1aee0d7f0bd429a7d6a5684a5299, type: 3}
+  - {fileID: -1681975767681617424, guid: 918d1aee0d7f0bd429a7d6a5684a5299, type: 3}
+  - {fileID: 2478322156216496821, guid: 918d1aee0d7f0bd429a7d6a5684a5299, type: 3}
+  - {fileID: -7045370684836255459, guid: 918d1aee0d7f0bd429a7d6a5684a5299, type: 3}
+  - {fileID: -3711548060172276050, guid: 918d1aee0d7f0bd429a7d6a5684a5299, type: 3}
+  - {fileID: -845255582628717192, guid: 918d1aee0d7f0bd429a7d6a5684a5299, type: 3}
+  - {fileID: 2640377357336619159, guid: 918d1aee0d7f0bd429a7d6a5684a5299, type: 3}
+  - {fileID: 21300008, guid: 0361adef916d44e05a919acd52bbe71b, type: 3}
+  - {fileID: 21300004, guid: 0361adef916d44e05a919acd52bbe71b, type: 3}
+  - {fileID: 21300006, guid: 0361adef916d44e05a919acd52bbe71b, type: 3}
+  - {fileID: 21300000, guid: 0361adef916d44e05a919acd52bbe71b, type: 3}
+  - {fileID: 21300002, guid: 0361adef916d44e05a919acd52bbe71b, type: 3}
+  m_PackedSpriteNamesToIndex:
+  - Walk_5
+  - Walk_4
+  - Walk_7
+  - Walk_6
+  - Walk_1
+  - Walk_0
+  - Walk_3
+  - Walk_2
+  - Fire straight_2
+  - Fire straight_3
+  - Fire straight_0
+  - Fire straight_1
+  - Fire straight_6
+  - Fire straight_7
+  - Fire straight_4
+  - Fire straight_5
+  - Mer Shocked_1
+  - Mer Shocked_0
+  - Mer Shocked_2
+  - Startled
+  - Idle 1_10
+  - Idle 1_11
+  - Idle 1_12
+  - Idle 1_5
+  - Idle 1_13
+  - Idle 1_4
+  - Idle 1_7
+  - Idle 1_6
+  - Idle 1_1
+  - Idle 1_0
+  - Idle 1_3
+  - Idle 1_2
+  - Idle 1_9
+  - Idle 1_8
+  - Merdeka Drink_1
+  - Merdeka Drink_0
+  - Fire Up_3
+  - Fire Up_2
+  - Fire Up_1
+  - Fire Up_0
+  - Fire Up_5
+  - Fire Up_4
+  - Walkie Talkie_7
+  - Walkie Talkie_6
+  - Walkie Talkie_5
+  - Walkie Talkie_4
+  - Walkie Talkie_3
+  - Walkie Talkie_2
+  - Walkie Talkie_1
+  - Walkie Talkie_0
+  - Walkie Talkie_9
+  - Walkie Talkie_8
+  - Walkie Talkie_10
+  - Walkie Talkie_11
+  - Idle - fire_5
+  - Idle - fire_4
+  - Idle - fire_7
+  - Idle - fire_6
+  - Idle - fire_1
+  - Idle - fire_0
+  - Idle - fire_3
+  - Idle - fire_2
+  - Idle - fire_9
+  - Idle - fire_8
+  - Ready-Steady_4
+  - Ready-Steady_2
+  - Ready-Steady_3
+  - Ready-Steady_0
+  - Ready-Steady_1
+  m_RenderDataMap: {}
+  m_Tag: Merdeka_Atlas
+  m_IsVariant: 0

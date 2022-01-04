@@ -1,0 +1,98 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!687078895 &4343727234628468602
+SpriteAtlas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Theodorre_Atlas
+  m_EditorData:
+    serializedVersion: 2
+    textureSettings:
+      serializedVersion: 2
+      anisoLevel: 1
+      compressionQuality: 50
+      maxTextureSize: 2048
+      textureCompression: 0
+      filterMode: 0
+      generateMipMaps: 0
+      readable: 0
+      crunchedCompression: 0
+      sRGB: 1
+    platformSettings:
+    - serializedVersion: 3
+      m_BuildTarget: DefaultTexturePlatform
+      m_MaxTextureSize: 1024
+      m_ResizeAlgorithm: 0
+      m_TextureFormat: -1
+      m_TextureCompression: 0
+      m_CompressionQuality: 50
+      m_CrunchedCompression: 0
+      m_AllowsAlphaSplitting: 0
+      m_Overridden: 0
+      m_AndroidETC2FallbackOverride: 0
+      m_ForceMaximumCompressionQuality_BC6H_BC7: 0
+    packingSettings:
+      serializedVersion: 2
+      padding: 4
+      blockOffset: 1
+      allowAlphaSplitting: 0
+      enableRotation: 1
+      enableTightPacking: 1
+    secondaryTextureSettings: {}
+    variantMultiplier: 1
+    packables:
+    - {fileID: 2800000, guid: 17588b6de9a3c02438aefe1de8e163aa, type: 3}
+    - {fileID: 2800000, guid: 21a0362560d0b5b4fa364a4fb045dce4, type: 3}
+    - {fileID: 2800000, guid: f4d644ba985282843aa142406c54f18f, type: 3}
+    totalSpriteSurfaceArea: 451646
+    bindAsDefault: 1
+    isAtlasV2: 0
+    cachedData: {fileID: 0}
+  m_MasterAtlas: {fileID: 0}
+  m_PackedSprites:
+  - {fileID: 21300000, guid: 21a0362560d0b5b4fa364a4fb045dce4, type: 3}
+  - {fileID: -9146577693713773147, guid: f4d644ba985282843aa142406c54f18f, type: 3}
+  - {fileID: 6115977219019130854, guid: f4d644ba985282843aa142406c54f18f, type: 3}
+  - {fileID: -1060543748825815752, guid: f4d644ba985282843aa142406c54f18f, type: 3}
+  - {fileID: 4778724666156954536, guid: f4d644ba985282843aa142406c54f18f, type: 3}
+  - {fileID: 7125811518915430863, guid: f4d644ba985282843aa142406c54f18f, type: 3}
+  - {fileID: -4421338442454633134, guid: 17588b6de9a3c02438aefe1de8e163aa, type: 3}
+  - {fileID: -9102915991173092892, guid: 17588b6de9a3c02438aefe1de8e163aa, type: 3}
+  - {fileID: 6756088138204168643, guid: 17588b6de9a3c02438aefe1de8e163aa, type: 3}
+  - {fileID: 4536120413759088144, guid: 17588b6de9a3c02438aefe1de8e163aa, type: 3}
+  - {fileID: -5452047315527359283, guid: 17588b6de9a3c02438aefe1de8e163aa, type: 3}
+  - {fileID: -6735870248592730899, guid: 17588b6de9a3c02438aefe1de8e163aa, type: 3}
+  - {fileID: -3967836486411662401, guid: 17588b6de9a3c02438aefe1de8e163aa, type: 3}
+  - {fileID: -3501743481971863963, guid: 17588b6de9a3c02438aefe1de8e163aa, type: 3}
+  - {fileID: 7312340420532770036, guid: 17588b6de9a3c02438aefe1de8e163aa, type: 3}
+  - {fileID: 2776314906562724959, guid: 17588b6de9a3c02438aefe1de8e163aa, type: 3}
+  - {fileID: -5856004835624559364, guid: 17588b6de9a3c02438aefe1de8e163aa, type: 3}
+  - {fileID: -8253163410260921544, guid: 17588b6de9a3c02438aefe1de8e163aa, type: 3}
+  - {fileID: -2298516803277748110, guid: 17588b6de9a3c02438aefe1de8e163aa, type: 3}
+  - {fileID: 3545939655932655878, guid: 17588b6de9a3c02438aefe1de8e163aa, type: 3}
+  m_PackedSpriteNamesToIndex:
+  - Jolly good show, gents
+  - Theodor 2_4
+  - Theodor 2_1
+  - Theodor 2_0
+  - Theodor 2_3
+  - Theodor 2_2
+  - Theodor_2
+  - Theodor_1
+  - Theodor_0
+  - Theodor_7
+  - Theodor_6
+  - Theodor_5
+  - Theodor_4
+  - Theodor_9
+  - Theodor_8
+  - Theodor_12
+  - Theodor_13
+  - Theodor_10
+  - Theodor_11
+  - Theodor_3
+  m_RenderDataMap: {}
+  m_Tag: Theodorre_Atlas
+  m_IsVariant: 0

@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: 4be18e09f522546f398320c1e9f2f10e
+timeCreated: 1503859535
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Pixel Cyr
+  fontNames:
+  - Pixel Cyr
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,97 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!687078895 &4343727234628468602
+SpriteAtlas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Collectibles_Atlas
+  m_EditorData:
+    serializedVersion: 2
+    textureSettings:
+      serializedVersion: 2
+      anisoLevel: 1
+      compressionQuality: 50
+      maxTextureSize: 2048
+      textureCompression: 0
+      filterMode: 0
+      generateMipMaps: 0
+      readable: 0
+      crunchedCompression: 0
+      sRGB: 1
+    platformSettings:
+    - serializedVersion: 3
+      m_BuildTarget: DefaultTexturePlatform
+      m_MaxTextureSize: 256
+      m_ResizeAlgorithm: 0
+      m_TextureFormat: -1
+      m_TextureCompression: 0
+      m_CompressionQuality: 50
+      m_CrunchedCompression: 0
+      m_AllowsAlphaSplitting: 0
+      m_Overridden: 0
+      m_AndroidETC2FallbackOverride: 0
+      m_ForceMaximumCompressionQuality_BC6H_BC7: 0
+    packingSettings:
+      serializedVersion: 2
+      padding: 4
+      blockOffset: 1
+      allowAlphaSplitting: 0
+      enableRotation: 1
+      enableTightPacking: 1
+    secondaryTextureSettings: {}
+    variantMultiplier: 1
+    packables:
+    - {fileID: 2800000, guid: e6a1ab9c2d2974a93be366c5b857af07, type: 3}
+    - {fileID: 2800000, guid: 7a7b66f0e95005a40b81748e5878a1e2, type: 3}
+    - {fileID: 2800000, guid: a2caa51390be44237bd64e4be10551ae, type: 3}
+    - {fileID: 2800000, guid: 8d02bc661b1e7476096ae5312f0d2778, type: 3}
+    totalSpriteSurfaceArea: 59808
+    bindAsDefault: 1
+    isAtlasV2: 0
+    cachedData: {fileID: 0}
+  m_MasterAtlas: {fileID: 0}
+  m_PackedSprites:
+  - {fileID: 5469136321965665021, guid: 7a7b66f0e95005a40b81748e5878a1e2, type: 3}
+  - {fileID: -7310212354539238103, guid: 7a7b66f0e95005a40b81748e5878a1e2, type: 3}
+  - {fileID: -3526425377621973398, guid: a2caa51390be44237bd64e4be10551ae, type: 3}
+  - {fileID: 6537632570454512892, guid: a2caa51390be44237bd64e4be10551ae, type: 3}
+  - {fileID: 2004850185057582502, guid: a2caa51390be44237bd64e4be10551ae, type: 3}
+  - {fileID: -4966470171833347279, guid: a2caa51390be44237bd64e4be10551ae, type: 3}
+  - {fileID: 6888402160796434739, guid: a2caa51390be44237bd64e4be10551ae, type: 3}
+  - {fileID: -5986236339448095654, guid: a2caa51390be44237bd64e4be10551ae, type: 3}
+  - {fileID: 21300016, guid: 8d02bc661b1e7476096ae5312f0d2778, type: 3}
+  - {fileID: 21300018, guid: 8d02bc661b1e7476096ae5312f0d2778, type: 3}
+  - {fileID: 21300004, guid: 8d02bc661b1e7476096ae5312f0d2778, type: 3}
+  - {fileID: 21300006, guid: 8d02bc661b1e7476096ae5312f0d2778, type: 3}
+  - {fileID: 21300000, guid: 8d02bc661b1e7476096ae5312f0d2778, type: 3}
+  - {fileID: 21300002, guid: 8d02bc661b1e7476096ae5312f0d2778, type: 3}
+  - {fileID: 21300012, guid: 8d02bc661b1e7476096ae5312f0d2778, type: 3}
+  - {fileID: 21300014, guid: 8d02bc661b1e7476096ae5312f0d2778, type: 3}
+  - {fileID: 21300008, guid: 8d02bc661b1e7476096ae5312f0d2778, type: 3}
+  - {fileID: 21300010, guid: 8d02bc661b1e7476096ae5312f0d2778, type: 3}
+  - {fileID: 21300000, guid: e6a1ab9c2d2974a93be366c5b857af07, type: 3}
+  m_PackedSpriteNamesToIndex:
+  - Green Gem_0
+  - Green Gem_1
+  - Anger Managment Chip_3
+  - Anger Managment Chip_2
+  - Anger Managment Chip_1
+  - Anger Managment Chip_0
+  - Anger Managment Chip_5
+  - Anger Managment Chip_4
+  - Star_8
+  - Star_9
+  - Star_2
+  - Star_3
+  - Star_0
+  - Star_1
+  - Star_6
+  - Star_7
+  - Star_4
+  - Star_5
+  - Golden Ticket
+  m_RenderDataMap: {}
+  m_Tag: Collectibles_Atlas
+  m_IsVariant: 0
