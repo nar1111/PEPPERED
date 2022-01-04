@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Playables;
 using UnityEngine.UI;
+//I'll just quickly add a word BUM here, to check if GitHub thing works
+
 public class A_7 : MonoBehaviour
 {
     #pragma warning disable 649

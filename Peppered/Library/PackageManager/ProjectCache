@@ -1,7 +1,7 @@
 m_ProjectFiles:
   m_ManifestFileStatus:
     m_FilePath: /Users/mostovschikovvasiliy/Documents/Peppered/[PEPPERED]/[UNITY
-      PROJECT]/Peppered/Packages/manifest.json
+      PROJECT]/Peppered_Git-hub/Peppered/Packages/manifest.json
     m_PathExists: 1
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
@@ -10,12 +10,12 @@ m_ProjectFiles:
     m_Hash: 2479874230
   m_LockFileStatus:
     m_FilePath: /Users/mostovschikovvasiliy/Documents/Peppered/[PEPPERED]/[UNITY
-      PROJECT]/Peppered/Packages/packages-lock.json
+      PROJECT]/Peppered_Git-hub/Peppered/Packages/packages-lock.json
     m_PathExists: 1
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 637756795490000000
+      ticks: 637769225770000000
     m_Hash: 1024303773
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
@@ -28,7 +28,7 @@ m_PackageAssets:
       version: 4.0.1
       source: 1
       resolvedPath: /Users/mostovschikovvasiliy/Documents/Peppered/[PEPPERED]/[UNITY
-        PROJECT]/Peppered/Library/PackageCache/com.unity.2d.pixel-perfect@4.0.1
+        PROJECT]/Peppered_Git-hub/Peppered/Library/PackageCache/com.unity.2d.pixel-perfect@4.0.1
       assetPath: Packages/com.unity.2d.pixel-perfect
       name: com.unity.2d.pixel-perfect
       displayName: 2D Pixel Perfect
@@ -288,7 +288,7 @@ m_PackageAssets:
       version: 3.5.2
       source: 1
       resolvedPath: /Users/mostovschikovvasiliy/Documents/Peppered/[PEPPERED]/[UNITY
-        PROJECT]/Peppered/Library/PackageCache/com.unity.ads@3.5.2
+        PROJECT]/Peppered_Git-hub/Peppered/Library/PackageCache/com.unity.ads@3.5.2
       assetPath: Packages/com.unity.ads
       name: com.unity.ads
       displayName: Advertisement
@@ -429,7 +429,7 @@ m_PackageAssets:
       version: 3.5.3
       source: 1
       resolvedPath: /Users/mostovschikovvasiliy/Documents/Peppered/[PEPPERED]/[UNITY
-        PROJECT]/Peppered/Library/PackageCache/com.unity.analytics@3.5.3
+        PROJECT]/Peppered_Git-hub/Peppered/Library/PackageCache/com.unity.analytics@3.5.3
       assetPath: Packages/com.unity.analytics
       name: com.unity.analytics
       displayName: Analytics Library
@@ -560,7 +560,7 @@ m_PackageAssets:
       version: 2.6.3
       source: 1
       resolvedPath: /Users/mostovschikovvasiliy/Documents/Peppered/[PEPPERED]/[UNITY
-        PROJECT]/Peppered/Library/PackageCache/com.unity.cinemachine@2.6.3
+        PROJECT]/Peppered_Git-hub/Peppered/Library/PackageCache/com.unity.cinemachine@2.6.3
       assetPath: Packages/com.unity.cinemachine
       name: com.unity.cinemachine
       displayName: Cinemachine
@@ -718,7 +718,7 @@ m_PackageAssets:
       version: 1.3.9
       source: 1
       resolvedPath: /Users/mostovschikovvasiliy/Documents/Peppered/[PEPPERED]/[UNITY
-        PROJECT]/Peppered/Library/PackageCache/com.unity.collab-proxy@1.3.9
+        PROJECT]/Peppered_Git-hub/Peppered/Library/PackageCache/com.unity.collab-proxy@1.3.9
       assetPath: Packages/com.unity.collab-proxy
       name: com.unity.collab-proxy
       displayName: Unity Collaborate
@@ -839,7 +839,7 @@ m_PackageAssets:
       version: 1.0.6
       source: 1
       resolvedPath: /Users/mostovschikovvasiliy/Documents/Peppered/[PEPPERED]/[UNITY
-        PROJECT]/Peppered/Library/PackageCache/com.unity.ext.nunit@1.0.6
+        PROJECT]/Peppered_Git-hub/Peppered/Library/PackageCache/com.unity.ext.nunit@1.0.6
       assetPath: Packages/com.unity.ext.nunit
       name: com.unity.ext.nunit
       displayName: Custom NUnit
@@ -901,7 +901,7 @@ m_PackageAssets:
       version: 2.0.7
       source: 1
       resolvedPath: /Users/mostovschikovvasiliy/Documents/Peppered/[PEPPERED]/[UNITY
-        PROJECT]/Peppered/Library/PackageCache/com.unity.ide.rider@2.0.7
+        PROJECT]/Peppered_Git-hub/Peppered/Library/PackageCache/com.unity.ide.rider@2.0.7
       assetPath: Packages/com.unity.ide.rider
       name: com.unity.ide.rider
       displayName: JetBrains Rider Editor
@@ -1009,7 +1009,7 @@ m_PackageAssets:
       version: 2.0.5
       source: 1
       resolvedPath: /Users/mostovschikovvasiliy/Documents/Peppered/[PEPPERED]/[UNITY
-        PROJECT]/Peppered/Library/PackageCache/com.unity.ide.visualstudio@2.0.5
+        PROJECT]/Peppered_Git-hub/Peppered/Library/PackageCache/com.unity.ide.visualstudio@2.0.5
       assetPath: Packages/com.unity.ide.visualstudio
       name: com.unity.ide.visualstudio
       displayName: Visual Studio Editor
@@ -1089,7 +1089,7 @@ m_PackageAssets:
       version: 1.2.3
       source: 1
       resolvedPath: /Users/mostovschikovvasiliy/Documents/Peppered/[PEPPERED]/[UNITY
-        PROJECT]/Peppered/Library/PackageCache/com.unity.ide.vscode@1.2.3
+        PROJECT]/Peppered_Git-hub/Peppered/Library/PackageCache/com.unity.ide.vscode@1.2.3
       assetPath: Packages/com.unity.ide.vscode
       name: com.unity.ide.vscode
       displayName: Visual Studio Code Editor
@@ -1161,7 +1161,7 @@ m_PackageAssets:
       version: 1.0.8
       source: 1
       resolvedPath: /Users/mostovschikovvasiliy/Documents/Peppered/[PEPPERED]/[UNITY
-        PROJECT]/Peppered/Library/PackageCache/com.unity.multiplayer-hlapi@1.0.8
+        PROJECT]/Peppered_Git-hub/Peppered/Library/PackageCache/com.unity.multiplayer-hlapi@1.0.8
       assetPath: Packages/com.unity.multiplayer-hlapi
       name: com.unity.multiplayer-hlapi
       displayName: Multiplayer HLAPI
@@ -1234,7 +1234,7 @@ m_PackageAssets:
       version: 2.1.1
       source: 1
       resolvedPath: /Users/mostovschikovvasiliy/Documents/Peppered/[PEPPERED]/[UNITY
-        PROJECT]/Peppered/Library/PackageCache/com.unity.purchasing@2.1.1
+        PROJECT]/Peppered_Git-hub/Peppered/Library/PackageCache/com.unity.purchasing@2.1.1
       assetPath: Packages/com.unity.purchasing
       name: com.unity.purchasing
       displayName: In App Purchasing
@@ -1404,7 +1404,7 @@ m_PackageAssets:
       version: 10.2.2
       source: 1
       resolvedPath: /Users/mostovschikovvasiliy/Documents/Peppered/[PEPPERED]/[UNITY
-        PROJECT]/Peppered/Library/PackageCache/com.unity.render-pipelines.lightweight@10.2.2
+        PROJECT]/Peppered_Git-hub/Peppered/Library/PackageCache/com.unity.render-pipelines.lightweight@10.2.2
       assetPath: Packages/com.unity.render-pipelines.lightweight
       name: com.unity.render-pipelines.lightweight
       displayName: Lightweight RP
@@ -1575,7 +1575,7 @@ m_PackageAssets:
       version: 1.1.20
       source: 1
       resolvedPath: /Users/mostovschikovvasiliy/Documents/Peppered/[PEPPERED]/[UNITY
-        PROJECT]/Peppered/Library/PackageCache/com.unity.test-framework@1.1.20
+        PROJECT]/Peppered_Git-hub/Peppered/Library/PackageCache/com.unity.test-framework@1.1.20
       assetPath: Packages/com.unity.test-framework
       name: com.unity.test-framework
       displayName: Test Framework
@@ -1675,7 +1675,7 @@ m_PackageAssets:
       version: 3.0.3
       source: 1
       resolvedPath: /Users/mostovschikovvasiliy/Documents/Peppered/[PEPPERED]/[UNITY
-        PROJECT]/Peppered/Library/PackageCache/com.unity.textmeshpro@3.0.3
+        PROJECT]/Peppered_Git-hub/Peppered/Library/PackageCache/com.unity.textmeshpro@3.0.3
       assetPath: Packages/com.unity.textmeshpro
       name: com.unity.textmeshpro
       displayName: TextMeshPro
@@ -1841,7 +1841,7 @@ m_PackageAssets:
       version: 1.4.5
       source: 1
       resolvedPath: /Users/mostovschikovvasiliy/Documents/Peppered/[PEPPERED]/[UNITY
-        PROJECT]/Peppered/Library/PackageCache/com.unity.timeline@1.4.5
+        PROJECT]/Peppered_Git-hub/Peppered/Library/PackageCache/com.unity.timeline@1.4.5
       assetPath: Packages/com.unity.timeline
       name: com.unity.timeline
       displayName: Timeline
@@ -2102,7 +2102,7 @@ m_PackageAssets:
       version: 2.1.7
       source: 1
       resolvedPath: /Users/mostovschikovvasiliy/Documents/Peppered/[PEPPERED]/[UNITY
-        PROJECT]/Peppered/Library/PackageCache/com.unity.xr.legacyinputhelpers@2.1.7
+        PROJECT]/Peppered_Git-hub/Peppered/Library/PackageCache/com.unity.xr.legacyinputhelpers@2.1.7
       assetPath: Packages/com.unity.xr.legacyinputhelpers
       name: com.unity.xr.legacyinputhelpers
       displayName: XR Legacy Input Helpers
@@ -3940,7 +3940,7 @@ m_PackageAssets:
       version: 10.2.2
       source: 1
       resolvedPath: /Users/mostovschikovvasiliy/Documents/Peppered/[PEPPERED]/[UNITY
-        PROJECT]/Peppered/Library/PackageCache/com.unity.render-pipelines.universal@10.2.2
+        PROJECT]/Peppered_Git-hub/Peppered/Library/PackageCache/com.unity.render-pipelines.universal@10.2.2
       assetPath: Packages/com.unity.render-pipelines.universal
       name: com.unity.render-pipelines.universal
       displayName: Universal RP
@@ -4057,7 +4057,7 @@ m_PackageAssets:
       version: 2.3.0
       source: 1
       resolvedPath: /Users/mostovschikovvasiliy/Documents/Peppered/[PEPPERED]/[UNITY
-        PROJECT]/Peppered/Library/PackageCache/com.unity.postprocessing@2.3.0
+        PROJECT]/Peppered_Git-hub/Peppered/Library/PackageCache/com.unity.postprocessing@2.3.0
       assetPath: Packages/com.unity.postprocessing
       name: com.unity.postprocessing
       displayName: Post Processing
@@ -4145,7 +4145,7 @@ m_PackageAssets:
       version: 0.1.6-preview
       source: 1
       resolvedPath: /Users/mostovschikovvasiliy/Documents/Peppered/[PEPPERED]/[UNITY
-        PROJECT]/Peppered/Library/PackageCache/nuget.mono-cecil@0.1.6-preview
+        PROJECT]/Peppered_Git-hub/Peppered/Library/PackageCache/nuget.mono-cecil@0.1.6-preview
       assetPath: Packages/nuget.mono-cecil
       name: nuget.mono-cecil
       displayName: Mono Cecil
@@ -4196,7 +4196,7 @@ m_PackageAssets:
       version: 1.1.0
       source: 1
       resolvedPath: /Users/mostovschikovvasiliy/Documents/Peppered/[PEPPERED]/[UNITY
-        PROJECT]/Peppered/Library/PackageCache/com.unity.mathematics@1.1.0
+        PROJECT]/Peppered_Git-hub/Peppered/Library/PackageCache/com.unity.mathematics@1.1.0
       assetPath: Packages/com.unity.mathematics
       name: com.unity.mathematics
       displayName: Mathematics
@@ -4276,7 +4276,7 @@ m_PackageAssets:
       version: 10.2.2
       source: 1
       resolvedPath: /Users/mostovschikovvasiliy/Documents/Peppered/[PEPPERED]/[UNITY
-        PROJECT]/Peppered/Library/PackageCache/com.unity.render-pipelines.core@10.2.2
+        PROJECT]/Peppered_Git-hub/Peppered/Library/PackageCache/com.unity.render-pipelines.core@10.2.2
       assetPath: Packages/com.unity.render-pipelines.core
       name: com.unity.render-pipelines.core
       displayName: Core RP Library
@@ -4431,7 +4431,7 @@ m_PackageAssets:
       version: 10.2.2
       source: 1
       resolvedPath: /Users/mostovschikovvasiliy/Documents/Peppered/[PEPPERED]/[UNITY
-        PROJECT]/Peppered/Library/PackageCache/com.unity.shadergraph@10.2.2
+        PROJECT]/Peppered_Git-hub/Peppered/Library/PackageCache/com.unity.shadergraph@10.2.2
       assetPath: Packages/com.unity.shadergraph
       name: com.unity.shadergraph
       displayName: Shader Graph
@@ -4589,7 +4589,7 @@ m_PackageAssets:
       version: 4.3.1
       source: 1
       resolvedPath: /Users/mostovschikovvasiliy/Documents/Peppered/[PEPPERED]/[UNITY
-        PROJECT]/Peppered/Library/PackageCache/com.unity.searcher@4.3.1
+        PROJECT]/Peppered_Git-hub/Peppered/Library/PackageCache/com.unity.searcher@4.3.1
       assetPath: Packages/com.unity.searcher
       name: com.unity.searcher
       displayName: Searcher
@@ -4680,5 +4680,5 @@ m_PackageAssets:
         serializedVersion: 2
         ticks: 0
       m_Hash: 0
-m_ProjectPath: /Users/mostovschikovvasiliy/Documents/Peppered/[PEPPERED]/[UNITY PROJECT]/Peppered/Packages
+m_ProjectPath: /Users/mostovschikovvasiliy/Documents/Peppered/[PEPPERED]/[UNITY PROJECT]/Peppered_Git-hub/Peppered/Packages
 m_EditorVersion: 2020.2.1f1 (270dd8c3da1c)
