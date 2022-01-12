@@ -65,7 +65,8 @@ SpriteAtlas:
     - {fileID: 2800000, guid: bd28c5faad8c046dbba54c30f0205eb4, type: 3}
     - {fileID: 2800000, guid: fc4b0830ce946450e953aac2a8adc43e, type: 3}
     - {fileID: 2800000, guid: 73dc4cf6f546d4bd6ba91c1aba1c58f2, type: 3}
-    totalSpriteSurfaceArea: 1897794
+    - {fileID: 2800000, guid: 5f4626a0e86cd4fd79fed179f8c64dbb, type: 3}
+    totalSpriteSurfaceArea: 1908464
     bindAsDefault: 1
     isAtlasV2: 0
     cachedData: {fileID: 0}
@@ -73,6 +74,7 @@ SpriteAtlas:
   m_PackedSprites:
   - {fileID: 5838948909667050540, guid: fc4b0830ce946450e953aac2a8adc43e, type: 3}
   - {fileID: -4019074410351440534, guid: fc4b0830ce946450e953aac2a8adc43e, type: 3}
+  - {fileID: 21300000, guid: 5f4626a0e86cd4fd79fed179f8c64dbb, type: 3}
   - {fileID: -7971829304448212827, guid: c38963e03911f4b0ea2bbc8561628135, type: 3}
   - {fileID: 8632361173277109610, guid: c38963e03911f4b0ea2bbc8561628135, type: 3}
   - {fileID: 1305808578109045970, guid: c38963e03911f4b0ea2bbc8561628135, type: 3}
@@ -179,6 +181,7 @@ SpriteAtlas:
   m_PackedSpriteNamesToIndex:
   - Sebastion The System Fighter_1
   - Sebastion The System Fighter_0
+  - Graffiti Artist
   - Dont ask her about minorities_1
   - Dont ask her about minorities_0
   - Dont ask her about minorities_3

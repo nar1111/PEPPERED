@@ -71,7 +71,7 @@ SpriteAtlas:
     - {fileID: 2800000, guid: 21f8ae941cbd74aa79876615e8037e4c, type: 3}
     - {fileID: 2800000, guid: 560fe3c4b77664ca79ee562fd65c3930, type: 3}
     - {fileID: 2800000, guid: 0f554c48e5de1432d82fc401152e59d8, type: 3}
-    - {fileID: 2800000, guid: f702884ecd2d445148c19c507a82b697, type: 3}
+    - {fileID: 2800000, guid: af68a6d576b96402f9a616161e875921, type: 3}
     - {fileID: 2800000, guid: c92f3505ec9064ad284d8e35ca9c74e2, type: 3}
     - {fileID: 2800000, guid: cbcdb6ebc6ecf42ed911b1c345eb7290, type: 3}
     - {fileID: 2800000, guid: 568200e2926e1434481252560f4b2904, type: 3}
@@ -156,7 +156,8 @@ SpriteAtlas:
     - {fileID: 2800000, guid: 0f0300565457d4bb898b188fb5af4378, type: 3}
     - {fileID: 21300000, guid: 69d3bd09d283e42f0a904e74597d7080, type: 3}
     - {fileID: 2800000, guid: ef3dcfcebaec34e77b6d36755cafaee3, type: 3}
-    totalSpriteSurfaceArea: 7504426
+    - {fileID: 2800000, guid: 3e8f6a92a4a704217a3a6bd9055a0bec, type: 3}
+    totalSpriteSurfaceArea: 7654678
     bindAsDefault: 1
     isAtlasV2: 0
     cachedData: {fileID: 0}
@@ -216,6 +217,7 @@ SpriteAtlas:
   - {fileID: 8139982086043073746, guid: c6bf28425371d46fb9cda54764d6fbd6, type: 3}
   - {fileID: 2976981001889096856, guid: c6bf28425371d46fb9cda54764d6fbd6, type: 3}
   - {fileID: 21300000, guid: 03899482b8fc94798aecc7400e026364, type: 3}
+  - {fileID: 21300000, guid: 3e8f6a92a4a704217a3a6bd9055a0bec, type: 3}
   - {fileID: 8321766892550717063, guid: 568200e2926e1434481252560f4b2904, type: 3}
   - {fileID: 8510077963439786090, guid: 568200e2926e1434481252560f4b2904, type: 3}
   - {fileID: 21300000, guid: 476774734154f4f5da26dac80d7ff1f8, type: 3}
@@ -286,6 +288,15 @@ SpriteAtlas:
   - {fileID: 21300000, guid: 72fa9075108d44c91b2542ce4f82acbf, type: 3}
   - {fileID: 21300000, guid: c4914e859aff54ea3b9281dd0648c1c1, type: 3}
   - {fileID: 21300000, guid: 42a72f85a43ea4493b14cb15a9f31c60, type: 3}
+  - {fileID: 8483596672300058218, guid: af68a6d576b96402f9a616161e875921, type: 3}
+  - {fileID: -2562348654830044103, guid: af68a6d576b96402f9a616161e875921, type: 3}
+  - {fileID: -6118086923785469672, guid: af68a6d576b96402f9a616161e875921, type: 3}
+  - {fileID: 8196915253070531384, guid: af68a6d576b96402f9a616161e875921, type: 3}
+  - {fileID: 8491787766618612141, guid: af68a6d576b96402f9a616161e875921, type: 3}
+  - {fileID: -5326723418414547180, guid: af68a6d576b96402f9a616161e875921, type: 3}
+  - {fileID: -5855208849800436647, guid: af68a6d576b96402f9a616161e875921, type: 3}
+  - {fileID: -8648647039357971042, guid: af68a6d576b96402f9a616161e875921, type: 3}
+  - {fileID: 5934524938205097006, guid: af68a6d576b96402f9a616161e875921, type: 3}
   - {fileID: 21300000, guid: 09d719d597a9346ec99faaa6240dee25, type: 3}
   - {fileID: 21300000, guid: fefe3d068b3724cbdbfe828cf805b278, type: 3}
   - {fileID: 21300000, guid: d20c4f3631162455ba638745508f6d7c, type: 3}
@@ -409,7 +420,6 @@ SpriteAtlas:
   - {fileID: 21300000, guid: b25d455d2cdcf442ca0e391df8819076, type: 3}
   - {fileID: 21300000, guid: 4b83c59de93644229a68694a4a8c5d29, type: 3}
   - {fileID: 21300000, guid: 4a26a3fded6cc40b4afd844ca96ca191, type: 3}
-  - {fileID: 21300000, guid: f702884ecd2d445148c19c507a82b697, type: 3}
   - {fileID: 21300000, guid: 1cdc4b8ef61e84f4c887c0263160e909, type: 3}
   - {fileID: 7784153818957373169, guid: 3c64359ebb7064f7aae2bf662221a06d, type: 3}
   - {fileID: -5673087204833335767, guid: 3c64359ebb7064f7aae2bf662221a06d, type: 3}
@@ -495,6 +505,7 @@ SpriteAtlas:
   - KeyCard_1
   - KeyCard_0
   - Buidling Prop 1
+  - Giant Strawberry Bush
   - Straberries_0
   - Straberries_1
   - Wall Texture 6
@@ -565,6 +576,15 @@ SpriteAtlas:
   - Tubes
   - KickStarter Stand
   - Air Condition Box 3
+  - Teo G_8
+  - Teo G_3
+  - Teo G_2
+  - Teo G_1
+  - Teo G_0
+  - Teo G_7
+  - Teo G_6
+  - Teo G_5
+  - Teo G_4
   - Back3
   - Wall Texture 11
   - RubberBall1
@@ -688,7 +708,6 @@ SpriteAtlas:
   - Left Door
   - Exit Sign Secret
   - Warning Note
-  - Teo G
   - Playground 1
   - Abyss_Buidling_Tileset_13
   - Abyss_Buidling_Tileset_12

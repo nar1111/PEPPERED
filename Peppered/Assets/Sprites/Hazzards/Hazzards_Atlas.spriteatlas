@@ -67,8 +67,7 @@ SpriteAtlas:
     - {fileID: 2800000, guid: b55ed02d104654250bb538f2ad23d644, type: 3}
     - {fileID: 2800000, guid: 64d004a268a3664459107ea729b59457, type: 3}
     - {fileID: 2800000, guid: 75fb06d1388a64ea69b8dfff29fb125b, type: 3}
-    - {fileID: 2800000, guid: 713798e0b64b04e4d8c8db077280f995, type: 3}
-    totalSpriteSurfaceArea: 1021643
+    totalSpriteSurfaceArea: 999143
     bindAsDefault: 1
     isAtlasV2: 0
     cachedData: {fileID: 0}
@@ -85,15 +84,6 @@ SpriteAtlas:
   - {fileID: 1371902213157426602, guid: 19edac500cb974ddba95628fe5321402, type: 3}
   - {fileID: 6925330608835871255, guid: 19edac500cb974ddba95628fe5321402, type: 3}
   - {fileID: 21300000, guid: 843cdda0627dd4b419dd4f7cec8c4643, type: 3}
-  - {fileID: 5701442467962063264, guid: 713798e0b64b04e4d8c8db077280f995, type: 3}
-  - {fileID: -3886323537442838831, guid: 713798e0b64b04e4d8c8db077280f995, type: 3}
-  - {fileID: -5757771979065305064, guid: 713798e0b64b04e4d8c8db077280f995, type: 3}
-  - {fileID: 4376579842211485126, guid: 713798e0b64b04e4d8c8db077280f995, type: 3}
-  - {fileID: 5965855778970779038, guid: 713798e0b64b04e4d8c8db077280f995, type: 3}
-  - {fileID: 2907795107435072929, guid: 713798e0b64b04e4d8c8db077280f995, type: 3}
-  - {fileID: 6393344404186169895, guid: 713798e0b64b04e4d8c8db077280f995, type: 3}
-  - {fileID: -2717224700342636702, guid: 713798e0b64b04e4d8c8db077280f995, type: 3}
-  - {fileID: 880193292267183436, guid: 713798e0b64b04e4d8c8db077280f995, type: 3}
   - {fileID: 21300008, guid: 75fb06d1388a64ea69b8dfff29fb125b, type: 3}
   - {fileID: 21300010, guid: 75fb06d1388a64ea69b8dfff29fb125b, type: 3}
   - {fileID: 21300012, guid: 75fb06d1388a64ea69b8dfff29fb125b, type: 3}
@@ -222,15 +212,6 @@ SpriteAtlas:
   - Drone_4
   - Drone_5
   - Stealth UI LoadWheel
-  - Strawberry Drone_3
-  - Strawberry Drone_2
-  - Strawberry Drone_1
-  - Strawberry Drone_0
-  - Strawberry Drone_7
-  - Strawberry Drone_6
-  - Strawberry Drone_5
-  - Strawberry Drone_4
-  - Strawberry Drone_8
   - Smarchok_4
   - Smarchok_5
   - Smarchok_6
