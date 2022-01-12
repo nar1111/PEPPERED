@@ -469,5 +469,4 @@ public class MySceneManager : MonoBehaviour
     public void MStop() { Music.Stop(); }
     public void MPlay() { Music.volume = BGVol; Music.Play(); }
     #endregion
-
 }

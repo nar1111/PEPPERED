@@ -64,7 +64,8 @@ SpriteAtlas:
     - {fileID: 2800000, guid: 2506838cd024a4c5393b9ca2a523f88e, type: 3}
     - {fileID: 2800000, guid: bd28c5faad8c046dbba54c30f0205eb4, type: 3}
     - {fileID: 2800000, guid: fc4b0830ce946450e953aac2a8adc43e, type: 3}
-    totalSpriteSurfaceArea: 1111362
+    - {fileID: 2800000, guid: 73dc4cf6f546d4bd6ba91c1aba1c58f2, type: 3}
+    totalSpriteSurfaceArea: 1897794
     bindAsDefault: 1
     isAtlasV2: 0
     cachedData: {fileID: 0}
@@ -116,6 +117,18 @@ SpriteAtlas:
   - {fileID: -9220816947620158919, guid: 41002ce5b0dd946089f42f492fc817e1, type: 3}
   - {fileID: -5810375582054787288, guid: 41002ce5b0dd946089f42f492fc817e1, type: 3}
   - {fileID: -4222982557481709342, guid: 41002ce5b0dd946089f42f492fc817e1, type: 3}
+  - {fileID: 1980868889932428595, guid: 73dc4cf6f546d4bd6ba91c1aba1c58f2, type: 3}
+  - {fileID: 2297079452542655732, guid: 73dc4cf6f546d4bd6ba91c1aba1c58f2, type: 3}
+  - {fileID: -1433138888936141865, guid: 73dc4cf6f546d4bd6ba91c1aba1c58f2, type: 3}
+  - {fileID: -7108216850996104635, guid: 73dc4cf6f546d4bd6ba91c1aba1c58f2, type: 3}
+  - {fileID: -3586058387574409628, guid: 73dc4cf6f546d4bd6ba91c1aba1c58f2, type: 3}
+  - {fileID: -6798047316380236110, guid: 73dc4cf6f546d4bd6ba91c1aba1c58f2, type: 3}
+  - {fileID: 4822694797315206860, guid: 73dc4cf6f546d4bd6ba91c1aba1c58f2, type: 3}
+  - {fileID: 1678581960487868687, guid: 73dc4cf6f546d4bd6ba91c1aba1c58f2, type: 3}
+  - {fileID: 91050028365819866, guid: 73dc4cf6f546d4bd6ba91c1aba1c58f2, type: 3}
+  - {fileID: 3245358446289929241, guid: 73dc4cf6f546d4bd6ba91c1aba1c58f2, type: 3}
+  - {fileID: 3416942165477344336, guid: 73dc4cf6f546d4bd6ba91c1aba1c58f2, type: 3}
+  - {fileID: -2568007778675046003, guid: 73dc4cf6f546d4bd6ba91c1aba1c58f2, type: 3}
   - {fileID: 21300000, guid: 2a1846078f04f492cb5cfce9a77d53ae, type: 3}
   - {fileID: 7374132637714691024, guid: 9ec32617cc00944339f3d0bc93d6f492, type: 3}
   - {fileID: 3479973685207005520, guid: 9ec32617cc00944339f3d0bc93d6f492, type: 3}
@@ -210,6 +223,18 @@ SpriteAtlas:
   - No, he's not a pimp_3
   - No, he's not a pimp_0
   - No, he's not a pimp_1
+  - Jeff The Manager_10
+  - Jeff The Manager_11
+  - Jeff The Manager_1
+  - Jeff The Manager_0
+  - Jeff The Manager_3
+  - Jeff The Manager_2
+  - Jeff The Manager_5
+  - Jeff The Manager_4
+  - Jeff The Manager_7
+  - Jeff The Manager_6
+  - Jeff The Manager_9
+  - Jeff The Manager_8
   - CrowdGroup2
   - Vincent Jerome_5
   - Vincent Jerome_4
