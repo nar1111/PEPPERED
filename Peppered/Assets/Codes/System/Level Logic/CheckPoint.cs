@@ -7,8 +7,6 @@ public class CheckPoint : MonoBehaviour {
     [Header("-- IMPORTAN STUFF --")]
     [SerializeField] private AUDIOMANAGER AudiMan;
     //public SaveSystem SS;
-    [SerializeField]
-    private Button_Choose BChoose;
     public GameObject Pepper;
     public float TriggerDistance;
     public ParticleSystem CheckEffect;

@@ -66,7 +66,8 @@ SpriteAtlas:
     - {fileID: 2800000, guid: fc4b0830ce946450e953aac2a8adc43e, type: 3}
     - {fileID: 2800000, guid: 73dc4cf6f546d4bd6ba91c1aba1c58f2, type: 3}
     - {fileID: 2800000, guid: 5f4626a0e86cd4fd79fed179f8c64dbb, type: 3}
-    totalSpriteSurfaceArea: 1908464
+    - {fileID: 2800000, guid: 603ca7ee5b1034ac78e50aeffc007ce3, type: 3}
+    totalSpriteSurfaceArea: 1923276
     bindAsDefault: 1
     isAtlasV2: 0
     cachedData: {fileID: 0}
@@ -170,6 +171,7 @@ SpriteAtlas:
   - {fileID: -2163401208428727399, guid: 2898ddccf16024e948aec12761ca1a89, type: 3}
   - {fileID: 1756988737007799742, guid: 2898ddccf16024e948aec12761ca1a89, type: 3}
   - {fileID: 2364218640639357629, guid: 2898ddccf16024e948aec12761ca1a89, type: 3}
+  - {fileID: 21300000, guid: 603ca7ee5b1034ac78e50aeffc007ce3, type: 3}
   - {fileID: 21300000, guid: 9df0920fd3f0c468ab4f7b40837284b2, type: 3}
   - {fileID: 1013974454648684250, guid: 60dd9d4fdba514e4080107afb10b4c4d, type: 3}
   - {fileID: -989327682723651311, guid: 60dd9d4fdba514e4080107afb10b4c4d, type: 3}
@@ -277,6 +279,7 @@ SpriteAtlas:
   - Benjamin Bubbleston_1
   - Benjamin Bubbleston_2
   - Benjamin Bubbleston_3
+  - Homeless Man
   - CrowdGroup1
   - Barista1_1
   - Barista1_0

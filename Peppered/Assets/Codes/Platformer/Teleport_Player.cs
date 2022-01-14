@@ -39,6 +39,7 @@ public class Teleport_Player : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
+            Player.ResetAll();
             Player.MyRigidBody.velocity = Vector3.zero;
             Player.CanMove = false;
             Player.gameObject.transform.position = OutPoint.position;
