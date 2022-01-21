@@ -67,7 +67,8 @@ SpriteAtlas:
     - {fileID: 2800000, guid: 73dc4cf6f546d4bd6ba91c1aba1c58f2, type: 3}
     - {fileID: 2800000, guid: 5f4626a0e86cd4fd79fed179f8c64dbb, type: 3}
     - {fileID: 2800000, guid: 603ca7ee5b1034ac78e50aeffc007ce3, type: 3}
-    totalSpriteSurfaceArea: 1923276
+    - {fileID: 2800000, guid: b69a3ad2d50aa4ba3bf1a2bd481b75ee, type: 3}
+    totalSpriteSurfaceArea: 1963276
     bindAsDefault: 1
     isAtlasV2: 0
     cachedData: {fileID: 0}
@@ -83,6 +84,10 @@ SpriteAtlas:
   - {fileID: -4424558205420328159, guid: c38963e03911f4b0ea2bbc8561628135, type: 3}
   - {fileID: -5768531071441815179, guid: c38963e03911f4b0ea2bbc8561628135, type: 3}
   - {fileID: 21300000, guid: 27d30731753274b83b309b81375e0143, type: 3}
+  - {fileID: 590205317564339284, guid: b69a3ad2d50aa4ba3bf1a2bd481b75ee, type: 3}
+  - {fileID: 9014238776322649331, guid: b69a3ad2d50aa4ba3bf1a2bd481b75ee, type: 3}
+  - {fileID: -5793919558863183073, guid: b69a3ad2d50aa4ba3bf1a2bd481b75ee, type: 3}
+  - {fileID: -6689318862308691822, guid: b69a3ad2d50aa4ba3bf1a2bd481b75ee, type: 3}
   - {fileID: 369949529061463667, guid: 69ba8743068244377b041f805faf3d13, type: 3}
   - {fileID: 7349547786803104210, guid: 69ba8743068244377b041f805faf3d13, type: 3}
   - {fileID: -1949293256696282587, guid: 69ba8743068244377b041f805faf3d13, type: 3}
@@ -191,6 +196,10 @@ SpriteAtlas:
   - Dont ask her about minorities_5
   - Dont ask her about minorities_4
   - Bouncer Eyes
+  - Nosy The Nose Man_1
+  - Nosy The Nose Man_0
+  - Nosy The Nose Man_3
+  - Nosy The Nose Man_2
   - Joey_14
   - Joey_15
   - Joey_16

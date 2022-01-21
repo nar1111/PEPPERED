@@ -9,6 +9,7 @@ public class State_Dumpster_Inside : State
     [SerializeField] private State_Dumpster_Idle IdleState;
     [SerializeField] private Animator Myanim;
     [SerializeField] private float BouncePower;
+    [SerializeField] private AUDIOMANAGER AudiMan;
     private bool Moved;
 
     public override State RunCurrentState()
@@ -24,6 +25,7 @@ public class State_Dumpster_Inside : State
             Player.Bounce(BouncePower, 2);
             Player.MyRigidBody.gravityScale = 1.6f;
             Player.MyAnim.Play("HighJump1");
+            AudiMan.Play("High Jump");
             return IdleState;
         }
 
@@ -37,7 +39,7 @@ public class State_Dumpster_Inside : State
         {
             Moved = true;
             Myanim.Play("Dumpster_Shake");
-            //MoveSound.Play();
+            AudiMan.Play("Dumpster Move");
         }
 
         if (Input.GetAxisRaw("Horizontal") == 0) { Moved = false; }

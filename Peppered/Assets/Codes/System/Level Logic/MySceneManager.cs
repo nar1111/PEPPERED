@@ -408,6 +408,7 @@ public class MySceneManager : MonoBehaviour
 
     IEnumerator Load(float TrnTime, string LvlName)
     {
+      //  Player.MyRigidBody.velocity = Vector2.zero;
         //Change Song
         if (CurrentSongNum != NewTrack)
         {

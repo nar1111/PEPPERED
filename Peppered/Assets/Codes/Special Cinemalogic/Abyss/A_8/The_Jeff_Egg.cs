@@ -10,6 +10,7 @@ public class The_Jeff_Egg : MonoBehaviour
     [HideInInspector]public int EggStage = 0;
 
     [Header("--DIALOGUE STUFF--")]
+    [SerializeField] private AUDIOMANAGER AudiMan;
     [SerializeField] private DialogueManager DLMan;
     [SerializeField] private AudioSource[] SFX;
 
@@ -30,13 +31,14 @@ public class The_Jeff_Egg : MonoBehaviour
         {
             EggStage = 1;
             Player.MyRigidBody.velocity = Vector2.zero;
-            Player.Bounce(14f, 1);
+            Player.Bounce(8f, 1);
+            AudiMan.Play("Crush");
             MyRen.sprite = Cracked;
         }
 
         if (Vector2.Distance(Player.gameObject.transform.position, transform.position) < 0.6f && MySceneManager.Act == true)
         {
-            if (EggStage == 0) { DialogueEgg(); } else { DialogueCracked(); }
+            if (EggStage == 0) { DialogueEgg(); } else { DialogueCracked();}
         }
     }
 

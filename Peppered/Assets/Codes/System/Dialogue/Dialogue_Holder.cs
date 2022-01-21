@@ -21,13 +21,18 @@ public class Dialogue_Holder : MonoBehaviour
     {
         if (MySceneManager.Act && DialogueScript.Playing == false && InReach && MySceneManager.CutscenePlaying == false)
         {
-            DialogueScript.DILines = Line;
-            DialogueScript.DITextSpeed = Speed;
-            DialogueScript.DIVoice = Voice;
-            DialogueScript.Noise = Noise;
-            DialogueScript.WhoTalks = TalkAnim;
-            DialogueScript.DIStarter();
+            StartDialogue();
         }
+    }
+
+    public void StartDialogue()
+    {
+        DialogueScript.DILines = Line;
+        DialogueScript.DITextSpeed = Speed;
+        DialogueScript.DIVoice = Voice;
+        DialogueScript.Noise = Noise;
+        DialogueScript.WhoTalks = TalkAnim;
+        DialogueScript.DIStarter();
     }
 
     private void OnTriggerEnter2D(Collider2D other)

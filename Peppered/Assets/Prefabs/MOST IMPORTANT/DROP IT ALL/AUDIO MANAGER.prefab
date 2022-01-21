@@ -383,7 +383,7 @@ MonoBehaviour:
     Source: {fileID: 0}
   - Name: Ting
     Clip: {fileID: 8300000, guid: df07c20021d3a4526b0bcddd9c162da0, type: 3}
-    Volume: 0.7
+    Volume: 0.6
     Pitch: 1
     Loop: 0
     Source: {fileID: 0}
@@ -407,7 +407,7 @@ MonoBehaviour:
     Source: {fileID: 0}
   - Name: Battle Start
     Clip: {fileID: 8300000, guid: bbd751bf07240441287cf61770f1a893, type: 3}
-    Volume: 0.5
+    Volume: 0.3
     Pitch: 1
     Loop: 0
     Source: {fileID: 0}
@@ -510,6 +510,60 @@ MonoBehaviour:
   - Name: News Flash
     Clip: {fileID: 8300000, guid: 981eeb27166994ca09f9e14419d9a80d, type: 3}
     Volume: 0.7
+    Pitch: 1
+    Loop: 0
+    Source: {fileID: 0}
+  - Name: Elevator 1
+    Clip: {fileID: 8300000, guid: d074b1f4a5273471283a9ef091baadf3, type: 3}
+    Volume: 0.6
+    Pitch: 1
+    Loop: 1
+    Source: {fileID: 0}
+  - Name: Elevator 2
+    Clip: {fileID: 8300000, guid: c64bc6df683c74d17888573083f6414c, type: 3}
+    Volume: 0.7
+    Pitch: 1
+    Loop: 0
+    Source: {fileID: 0}
+  - Name: Dumpster Move
+    Clip: {fileID: 8300000, guid: 0a9f742a4c80e419580a30f22a83742b, type: 3}
+    Volume: 0.9
+    Pitch: 1
+    Loop: 0
+    Source: {fileID: 0}
+  - Name: Fishy Run
+    Clip: {fileID: 8300000, guid: efbe327158d8c448f85ed1a2766c4699, type: 3}
+    Volume: 0.6
+    Pitch: 1.1
+    Loop: 0
+    Source: {fileID: 0}
+  - Name: Spotlight
+    Clip: {fileID: 8300000, guid: 5a59083efc9d54bd2ad19ce51a61799a, type: 3}
+    Volume: 0.6
+    Pitch: 0.7
+    Loop: 0
+    Source: {fileID: 0}
+  - Name: Doorbell
+    Clip: {fileID: 8300000, guid: 76ba82438ecfb4b13925a709554c8123, type: 3}
+    Volume: 0.6
+    Pitch: 1
+    Loop: 0
+    Source: {fileID: 0}
+  - Name: Scream
+    Clip: {fileID: 8300000, guid: 9966855667e184094a3bbc71ccaa87ea, type: 3}
+    Volume: 1
+    Pitch: 1
+    Loop: 1
+    Source: {fileID: 0}
+  - Name: Busted
+    Clip: {fileID: 8300000, guid: 55719dd1e039d41d787283ec0a2ccbba, type: 3}
+    Volume: 0.9
+    Pitch: 1
+    Loop: 0
+    Source: {fileID: 0}
+  - Name: Boop
+    Clip: {fileID: 8300000, guid: 2922f6e9c3a88453383271be9e7a6d61, type: 3}
+    Volume: 0.8
     Pitch: 1
     Loop: 0
     Source: {fileID: 0}

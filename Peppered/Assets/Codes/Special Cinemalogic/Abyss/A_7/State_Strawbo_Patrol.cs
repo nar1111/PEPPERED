@@ -26,7 +26,6 @@ public class State_Strawbo_Patrol : State
     [SerializeField] private Image StealthUI;
     [SerializeField] private GameObject LoadingBar;
 
-
     public override State RunCurrentState()
     {
         FOVFunction();

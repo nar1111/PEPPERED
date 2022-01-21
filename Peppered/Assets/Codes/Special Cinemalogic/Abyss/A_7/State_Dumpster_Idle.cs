@@ -11,6 +11,7 @@ public class State_Dumpster_Idle : State
     [SerializeField] private Animator Myanim;
     [SerializeField] private State_Dumpster_Inside Inside_State;
     [SerializeField] private bool Deadly = false;
+    [SerializeField] private AUDIOMANAGER AudiMan;
     private float Used = 0;
 
 
@@ -30,6 +31,7 @@ public class State_Dumpster_Idle : State
                 Used = 1f;
                 Player.Wind = false;
                 Myanim.Play("Dumpster_Shake");
+                AudiMan.Play("Dumpster Move");
                 return Inside_State;
             }
             else

@@ -19,6 +19,7 @@ public class Fall_Desk_Special : MonoBehaviour
     [SerializeField] private Transform SafePos;
     [SerializeField] private GameObject RespawnEffect;
     [SerializeField] private GameObject DiedEffect;
+    [SerializeField] private AudioSource Scream;
     private bool Died = false;
 
     [Header("Dialogue")]
@@ -90,6 +91,7 @@ public class Fall_Desk_Special : MonoBehaviour
     public void DropDown()
     {
         Stage = 2;
+        Scream.Play();
         if (Died == false)
         {
             NoNo.SetActive(false);
@@ -111,6 +113,7 @@ public class Fall_Desk_Special : MonoBehaviour
     public void HeDed()
     {
         MyAnim.Play("Vincent Jernoooo");
+        Scream.Play();
         Died = true;
         MyAnim.gameObject.transform.parent = null;
         MyAnim.gameObject.transform.position = SafePos.transform.position;

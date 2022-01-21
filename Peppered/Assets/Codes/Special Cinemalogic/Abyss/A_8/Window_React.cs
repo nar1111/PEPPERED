@@ -5,6 +5,7 @@ using UnityEngine;
 public class Window_React : MonoBehaviour
 {
     [SerializeField] private Animator[] Myanim;
+    [SerializeField] private AUDIOMANAGER Audiman;
     private int CurrentState = 0;
 
     public void React()
@@ -13,6 +14,7 @@ public class Window_React : MonoBehaviour
         {
             Myanim[CurrentState].Play("Window_Filler_Close");
             CurrentState++;
+            Audiman.Play("Door");
             Invoke("ReactSecondFloor", 0.15f);
         }
     }
@@ -22,6 +24,7 @@ public class Window_React : MonoBehaviour
         if (CurrentState < Myanim.Length)
         {
             Myanim[CurrentState].Play("Window_Filler_Close");
+            Audiman.Play("Door");
             CurrentState++;
         }
     }

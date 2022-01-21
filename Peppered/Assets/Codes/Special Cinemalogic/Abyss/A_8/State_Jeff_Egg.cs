@@ -21,6 +21,7 @@ public class State_Jeff_Egg : State
     [SerializeField] private PLAYER_CONTROLS Player;
     [SerializeField] private DialogueManager DLMan;
     [SerializeField] private AudioSource[] SFX;
+    private MySceneManager SceneMan;
     private bool Done = false;
 
     #region Private DL Stuff
@@ -33,17 +34,24 @@ public class State_Jeff_Egg : State
     private int LineNum;
     #endregion
 
-
     public override State RunCurrentState()
     {
-        if (CurrentState == 0) { CurrentState = 1; StartCoroutine(GiveBirth()); }
+        if (CurrentState == 0) { CurrentState = 1; WHAT_HAVE_I_DONE.Collectibles.Add("Jeff", 2);  StartCoroutine(GiveBirth()); }
 
         return this;
     }
 
     IEnumerator GiveBirth()
     {
+        if (SceneMan == null) {SceneMan = FindObjectOfType<MySceneManager>(); }
+        AudiMan.ChangePitch("Scream", 0.9f);
+        AudiMan.Play("Scream");
         yield return new WaitForSeconds(2f);
+        SceneMan.MPause();
+        AudiMan.StopIt("Scream");
+        AudiMan.ChangePitch("Scream", 1f);
+        AudiMan.Play("Dramatic Impact");
+        AudiMan.Play("Boop");
         CharAnim[0].Play("Jeff_Shocked");
         CharAnim[1].Play("Shaker_Idle");
         CharAnim[2].Play("Death_End");
@@ -74,7 +82,7 @@ public class State_Jeff_Egg : State
         while (DLMan.Playing) { yield return null; }
 
         CharAnim[0].Play("Jeff_Happy");
-
+        SceneMan.MPlay();
 
         LineNum = 2;
         DeclareLines();
@@ -100,6 +108,8 @@ public class State_Jeff_Egg : State
 
         Stuff[0].SetActive(false);
         Stuff[1].SetActive(true);
+        AudiMan.Play("Put Down");
+        SceneMan.MPause();
         yield return new WaitForSeconds(1f);
 
         LineNum = 1;
@@ -131,6 +141,7 @@ public class State_Jeff_Egg : State
         BLines.Hide(1f);
         Player.CanMove = true;
         MySceneManager.CutscenePlaying = false;
+        SceneMan.MPlay();
     }
 
     #region It's donskie

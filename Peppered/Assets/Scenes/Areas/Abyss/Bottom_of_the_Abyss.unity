@@ -11074,6 +11074,21 @@ PrefabInstance:
       propertyPath: EventName.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
+    - target: {fileID: 5406384451752021084, guid: a9b733196f61944079fdcba447fc1bed,
+        type: 3}
+      propertyPath: m_Size.y
+      value: 5.395254
+      objectReference: {fileID: 0}
+    - target: {fileID: 5406384451752021084, guid: a9b733196f61944079fdcba447fc1bed,
+        type: 3}
+      propertyPath: m_Offset.x
+      value: 0.02722931
+      objectReference: {fileID: 0}
+    - target: {fileID: 5406384451752021084, guid: a9b733196f61944079fdcba447fc1bed,
+        type: 3}
+      propertyPath: m_Offset.y
+      value: -0.27159977
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a9b733196f61944079fdcba447fc1bed, type: 3}
 --- !u!4 &5968286460088492913

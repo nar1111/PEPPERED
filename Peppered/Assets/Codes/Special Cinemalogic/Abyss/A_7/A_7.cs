@@ -28,6 +28,7 @@ public class A_7 : MonoBehaviour
     private Button_Choose BChose;
     [SerializeField]
     private State_Strawbo_Idle StrawboState;
+    private MySceneManager Sceneman;
 
     [Header("--DIALOGUE STUFF--")]
     [SerializeField]
@@ -43,7 +44,6 @@ public class A_7 : MonoBehaviour
     [SerializeField]
     private MySceneManager SceneMan;
     private bool Done = false;
-    private int LightNum = 1;
     [HideInInspector] public int Angeri = 0;
 
     #region Private DL Stuff
@@ -59,17 +59,35 @@ public class A_7 : MonoBehaviour
     private void Start()
     {
         if (MySceneManager.Abyss_State < 7) { MySceneManager.Abyss_State = 7; }
+        else if (MySceneManager.Abyss_State == 8)
+        {
+            TurnThingsOff[0].SetActive(false);
+            TurnThingsOff[1].SetActive(false);
+            TurnThingsOff[2].SetActive(false);
+        } else if (MySceneManager.Abyss_State >= 9)
+        {
+            TurnThingsOff[0].SetActive(false);
+            TurnThingsOff[1].SetActive(false);
+            TurnThingsOff[2].SetActive(false);
+            TurnThingsOff[3].SetActive(false);
+            TurnThingsOff[4].SetActive(false);
+            TurnThingsOff[5].SetActive(false);
+            TurnThingsOff[6].SetActive(false);
+            TurnThingsOff[7].SetActive(false);
+        }
     }
 
     public void BubblestonAlert()
     {
         CharAnim[0].Play("Benjamin_Scared");
+        AudioMan.Play("Amount1");
         Things[0].SetActive(true);
     }
 
     public void BubbleStonRun()
     {
         StartCoroutine(BubblestonRunEnum());
+        MySceneManager.Abyss_State = 8;
         Things[0].SetActive(false);
     }
 
@@ -107,15 +125,28 @@ public class A_7 : MonoBehaviour
         BLines.Hide(0.5f);
 
         Cutscene[0].Play();
+        AudioMan.Play("Fishy Run");
         Done = false;
         while (Done == false) { yield return null; }
         ElevatorAct.NPCActivator();
     }
 
-    public void TurnTheLightOn()
+    public void TurnTheLightOn0()
     {
-        Things[LightNum].SetActive(true);
-        LightNum++;
+        Things[1].SetActive(true);
+        AudioMan.Play("Spotlight");
+    }
+
+    public void TurnTheLightOn1()
+    {
+        Things[2].SetActive(true);
+        AudioMan.Play("Spotlight");
+    }
+
+    public void TurnTheLightOn2()
+    {
+        Things[3].SetActive(true);
+        AudioMan.Play("Spotlight");
     }
 
     public void ExitBlocked()
@@ -152,37 +183,42 @@ public class A_7 : MonoBehaviour
     public void TurtleNeck1()
     {
         CharAnim[2].Play("Turtleneck_Surprise");
+        AudioMan.Play("Amount1");
         LookScrp[0].enabled = true;
     }
 
     public void Scarlett1()
     {
         CharAnim[3].Play("Scarlett_Scared");
+        AudioMan.Play("Amount1");
         LookScrp[1].enabled = true;
     }
 
     public void NotAPimp1()
     {
         CharAnim[1].Play("NotAPimp_Scared");
+        AudioMan.Play("Amount1");
         LookScrp[2].enabled = true;
     }
 
     IEnumerator CommenceBeatingEnum()
     {
+        if (SceneMan = null) { SceneMan = FindObjectOfType<MySceneManager>(); }
         MySceneManager.CutscenePlaying = true;
         Player.CanMove = false;
         Player.MyRigidBody.velocity = new Vector2(0, 0);
         while (Player.Grounded == false) { yield return null; }
         BLines.Show(220f, 3f);
         SceneMan = FindObjectOfType<MySceneManager>();
-        SceneMan.MFadeOut(0.008f, false);
         yield return new WaitForSeconds(1f);
         Things[5].SetActive(false);
 
 
         //BOUNCER OPEN THE DOOR
         Done = false;
+        AudioMan.Play("Dramatic Impact");
         yield return new WaitForSeconds(2f);
+        Things[12].SetActive(false);
         Cutscene[2].Play();
         while (Done == false) { yield return null; }
 
@@ -217,6 +253,9 @@ public class A_7 : MonoBehaviour
         BLines.Hide(0f);
         Cams[0].SetActive(false);
         Cams[1].SetActive(true);
+        SceneMan.MStop();
+        SceneMan.MChange(16, 0.6f);
+        SceneMan.MPlay();
         yield return new WaitForSeconds(4f);
 
 
@@ -349,6 +388,8 @@ public class A_7 : MonoBehaviour
         DLMan.RightString = "[DOWNPLAY]";
         DLMan.ChoiceStarter();
         while (BChose.ButtonChoice == 0) { yield return null; }
+        AudioMan.Play("Dramatic Impact");
+        SceneMan.MStop();
 
 
         //CROWD PULLS OUT THE WEAPONS
@@ -367,11 +408,12 @@ public class A_7 : MonoBehaviour
         Things[10].SetActive(true);
         SFX[3].Play();
         BLines.Show(220f, 0f);
-        yield return new WaitForSeconds(5.8f);
+        yield return new WaitForSeconds(5.7f);
 
 
         //CROWD IS DONE
         Player.MyAnim.Play("Invisible");
+        AudioMan.Play("Dramatic Impact");
         Things[5].SetActive(true);
         Cams[3].SetActive(false);
         Cams[4].SetActive(true);
@@ -379,6 +421,7 @@ public class A_7 : MonoBehaviour
         Description[2].text = "";
         Things[4].SetActive(false);
         SFX[3].Stop();
+        SFX[4].volume = 0.3f;
 
 
         yield return new WaitForSeconds(1f);
@@ -476,6 +519,7 @@ public class A_7 : MonoBehaviour
         Player.CanMove = false;
         Things[9].SetActive(false);
         Cams[6].SetActive(false);
+        SFX[4].volume = 0f;
         Cutscene[4].Play();
         Done = false;
         while (Done == false) { yield return null; }
@@ -486,6 +530,8 @@ public class A_7 : MonoBehaviour
         Cams[8].SetActive(false);
         Cams[9].SetActive(false);
         Things[11].SetActive(true);
+        SceneMan.MChange(16, 0.5f);
+        SceneMan.MPlay();
     }
 
     public void StrawboPatrol(){ StartCoroutine(StrawboPatrolIEnum()); }
@@ -496,6 +542,7 @@ public class A_7 : MonoBehaviour
         MySceneManager.CutscenePlaying = true;
         Player.MyRigidBody.velocity = Vector3.zero;
         BLines.Show(220f, 1f);
+        MySceneManager.Abyss_State = 9;
         yield return new WaitForSeconds(2f);
         StrawboState.State = 1;
         while (StrawboState.State != 3) { yield return null; }
@@ -503,6 +550,13 @@ public class A_7 : MonoBehaviour
         MySceneManager.CutscenePlaying = false;
         BLines.Hide(0.5f);
     }
+
+    public void StopTheMusic()
+    {
+        SceneMan = FindObjectOfType<MySceneManager>();
+        SceneMan.MFadeOut(0.001f, false);
+    }
+
 
     #region It's donskie
     public void CutsceneDone() { Done = true; }

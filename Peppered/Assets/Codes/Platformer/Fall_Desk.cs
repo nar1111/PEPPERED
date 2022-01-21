@@ -12,6 +12,7 @@ public class Fall_Desk : MonoBehaviour
     [SerializeField] private Animator FireAnim;
     [SerializeField] private Transform FellPoint;
     [SerializeField] private Transform SpawnPoint;
+    [SerializeField] private AudioSource ExplodeSFX;
 
     private Vector3 StartPos;
     [HideInInspector]public int Stage = 0;
@@ -28,6 +29,7 @@ public class Fall_Desk : MonoBehaviour
         {
             if (transform.position.y < FellPoint.position.y)
             {
+                ExplodeSFX.Play();
                 Stage = 3;
                 MyRigidbody.isKinematic = true;
                 FireAnim.Play("HeatUp");

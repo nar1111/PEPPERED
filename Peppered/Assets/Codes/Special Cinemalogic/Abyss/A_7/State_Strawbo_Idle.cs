@@ -11,7 +11,8 @@ public class State_Strawbo_Idle : State
     [SerializeField] private Animator Myanim;
     [SerializeField] private AUDIOMANAGER Audi;
     [SerializeField] private GameObject FL;
-    [HideInInspector]public int State = 0;
+    [SerializeField] private AUDIOMANAGER AudiMan;
+    [HideInInspector] public int State = 0;
 
     public override State RunCurrentState()
     {
@@ -19,6 +20,7 @@ public class State_Strawbo_Idle : State
         {
             State = 2;
             FL.SetActive(true);
+            AudiMan.Play("Mer Gun Out");
             Myanim.Play("Strawberry Activate");
             Invoke("Activate", 1f);
             SeanAnim.SetBool("Talk", false);

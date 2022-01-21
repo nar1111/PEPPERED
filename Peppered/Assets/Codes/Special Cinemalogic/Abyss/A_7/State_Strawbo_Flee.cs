@@ -12,6 +12,7 @@ public class State_Strawbo_Flee : State
     [SerializeField] private GameObject Strawbo;
     [SerializeField] private GameObject PoliceSiren;
     [SerializeField] private Black_lines Blines;
+    [SerializeField] private AUDIOMANAGER AudiMan;
     private int MyState;
 
     public override State RunCurrentState()
@@ -47,12 +48,15 @@ public class State_Strawbo_Flee : State
         Blines.Show(220f, 1f);
         yield return new WaitForSeconds(2f);
         FlashAnim.Play("White_End", 0, 0.3f);
+        AudiMan.Play("Put Down");
         yield return new WaitForSeconds(2f);
         MyState = 2;
         Player.CanMove = true;
         MySceneManager.CutscenePlaying = false;
         Blines.Hide(0.3f);
+        //AudiMan.Play("Mer Gun Out");
         StrawAnim.Play("Strawberry Off");
         PoliceSiren.SetActive(false);
+        AudiMan.Play("Busted");
     }
 }

@@ -48,7 +48,7 @@ public class ChooseMode : MonoBehaviour
     {
         Timer = 3f;
 
-        ES3.DeleteFile("SaveFile.es3");
+        //ES3.DeleteFile("SaveFile.es3");
     }
 
     void Update()

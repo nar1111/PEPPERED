@@ -9,6 +9,7 @@ public class Benji_State_Talk : State
     [SerializeField] private Animator Myanim;
     [SerializeField] private Animator HughAnim;
     [SerializeField] private SpriteRenderer MyRen;
+    [SerializeField] private AUDIOMANAGER Audiman;
     private int MyStates = 0;
     private float Distance;
 
@@ -27,7 +28,7 @@ public class Benji_State_Talk : State
         if (MyRen.isVisible)
         {
             Distance = Vector3.Distance(Player.transform.position, Myanim.gameObject.transform.position);
-            if (Distance < 2 && MyStates == 1) { MyStates = 2; Myanim.Play("Benjamin_Scared"); Myanim.transform.localScale = new Vector3(1, 1, 1); Myanim.SetBool("Talk", false); }
+            if (Distance < 2 && MyStates == 1) { MyStates = 2; Myanim.Play("Benjamin_Scared"); Audiman.Play("Amount1"); Myanim.transform.localScale = new Vector3(1, 1, 1); Myanim.SetBool("Talk", false); }
             else if (Distance < 1 && MyStates == 2) { MyStates = 3; HughAnim.Play("Hugh_Alert"); }
         }
     }

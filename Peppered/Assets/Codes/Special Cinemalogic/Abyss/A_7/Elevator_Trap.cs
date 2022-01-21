@@ -11,6 +11,7 @@ public class Elevator_Trap : MonoBehaviour
     [SerializeField] private float BounceForce;
     [SerializeField] private GameObject WarningZone;
     [SerializeField] private GameObject ShakeEffect;
+    [SerializeField] private AUDIOMANAGER Audiman;
 
     private Vector3 BottomPoint;
     private bool Activate = false;
@@ -33,6 +34,8 @@ public class Elevator_Trap : MonoBehaviour
         if (Vector2.Distance(transform.position, TopPoint.position) > 0.02f)
         {
             Activate = true;
+            Audiman.Play("Elevator 1");
+            Audiman.Play("Put Down");
             if (WarningZone != null)
             {
                 WarningZone.SetActive(true);
@@ -43,6 +46,8 @@ public class Elevator_Trap : MonoBehaviour
     public void NPCActivator()
     {
         Activate = true;
+        Audiman.Play("Elevator 1");
+        Audiman.Play("Put Down");
     }
 
     void Restart()
@@ -69,6 +74,8 @@ public class Elevator_Trap : MonoBehaviour
             if (WarningZone != null) {WarningZone.SetActive(false);}
             ShakeEffect.SetActive(true);
             Invoke("TurnOffShake", 0.2f);
+            Audiman.StopIt("Elevator 1");
+            Audiman.Play("Elevator 2");
 
             if (Player.transform.parent != null)
             {

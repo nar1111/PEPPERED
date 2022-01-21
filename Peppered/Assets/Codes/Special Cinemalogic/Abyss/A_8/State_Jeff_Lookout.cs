@@ -32,6 +32,8 @@ public class State_Jeff_Lookout : State
     [SerializeField] private The_Jeff_Egg Eggg;
 
     [Header("--DIALOGUE STUFF--")]
+    [SerializeField] private AudioSource DoorBellSource;
+    [SerializeField] private AudioClip DoorBell;
     [SerializeField] private DialogueManager DLMan;
     [SerializeField] private AudioSource[] SFX;
 
@@ -130,6 +132,7 @@ public class State_Jeff_Lookout : State
                 }
                 ChillTimer = 0.4f;
                 FieldOfView.gameObject.SetActive(false);
+                DoorBellSource.PlayOneShot(DoorBell, 0.3f);
                 JeffShaker.Play("Shaker_Shake");
                 Invoke("ResetDoor", 0.1f);
         } else if (Solved)

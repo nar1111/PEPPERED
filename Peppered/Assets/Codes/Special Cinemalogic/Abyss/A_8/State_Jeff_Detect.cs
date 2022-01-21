@@ -2,7 +2,6 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine.Playables;
 using UnityEngine;
-
 public class State_Jeff_Detect : State
 {
     [HideInInspector]public int CurrentState;
@@ -34,7 +33,7 @@ public class State_Jeff_Detect : State
 
     public override State RunCurrentState()
     {
-        if (CurrentState == 0) { CurrentState = 1; StartCoroutine(Detected()); }
+        if (CurrentState == 0) { CurrentState = 1; WHAT_HAVE_I_DONE.Collectibles.Add("Jeff", 1); StartCoroutine(Detected()); }
         return this;
     }
 
@@ -49,7 +48,7 @@ public class State_Jeff_Detect : State
         for (int i = 0; i < LineNum; i++)
         {
             Speed[i] = 0.03f;
-            Voice[i] = SFX[0];
+            Voice[i] = SFX[1];
             TalkAnim[i] = CharAnim[0];
         }
         #endregion
@@ -94,7 +93,7 @@ public class State_Jeff_Detect : State
         for (int i = 0; i < LineNum; i++)
         {
             Speed[i] = 0.04f;
-            Voice[i] = SFX[0];
+            Voice[i] = SFX[1];
             TalkAnim[i] = CharAnim[0];
         }
         #endregion
@@ -114,6 +113,7 @@ public class State_Jeff_Detect : State
         Cutscene[0].Play();
         while (Done == false) { yield return null; }
 
+        AudiMan.Play("Busted");
         Cam.SetActive(false);
         BLines.Hide(1f);
         Player.CanMove = true;

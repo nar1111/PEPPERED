@@ -14,6 +14,7 @@ public class Benji_State_Hide : State
     [SerializeField] private float Speed;
     [SerializeField] private SpriteRenderer MyRen;
     [SerializeField] private A_7 Theatre;
+    [SerializeField] private AUDIOMANAGER Audiman;
 
     private int Hide = 0;
     private bool SwitchSide = false;
@@ -34,7 +35,7 @@ public class Benji_State_Hide : State
                 Hugh.transform.localScale = new Vector3(1, 1, 1);
                 if (Vector2.Distance(MyAnim.transform.position, LeftPoint.transform.position) > 0.05f)
                 {
-                    if (SwitchSide == false) { SwitchSide = true; Hide++; }
+                    if (SwitchSide == false) { SwitchSide = true; Hide++; Audiman.ChangePitch("Fishy Run", 1.1f); Audiman.Play("Fishy Run"); }
                     MyAnim.transform.localScale = new Vector3(-1, 1, 1);
                     MyAnim.gameObject.transform.position = Vector2.MoveTowards(MyAnim.transform.position, new Vector2(LeftPoint.position.x, MyAnim.transform.position.y), Speed * Time.deltaTime);
                     MyAnim.Play("Benjamin_Run");
@@ -52,7 +53,7 @@ public class Benji_State_Hide : State
                 Hugh.transform.localScale = new Vector3(-1, 1, 1);
                 if (Vector2.Distance(MyAnim.transform.position, RightPoint.transform.position) > 0.05f)
                 {
-                    if (SwitchSide == true) { SwitchSide = false; Hide++; }
+                    if (SwitchSide == true) { SwitchSide = false; Hide++; Audiman.ChangePitch("Fishy Run", 1.5f); Audiman.Play("Fishy Run"); }
                     MyAnim.transform.localScale = new Vector3(1, 1, 1);
                     MyAnim.gameObject.transform.position = Vector2.MoveTowards(MyAnim.transform.position, new Vector2(RightPoint.position.x, MyAnim.transform.position.y), Speed * Time.deltaTime);
                     MyAnim.Play("Benjamin_Run");
@@ -69,6 +70,7 @@ public class Benji_State_Hide : State
                 Hide = 11;
                 Theatre.Angeri = 1;
                 HughAnim.Play("Hugh_Angeri");
+                Audiman.Play("Battle Start");
                 Steam.SetActive(true);
             }
         }
