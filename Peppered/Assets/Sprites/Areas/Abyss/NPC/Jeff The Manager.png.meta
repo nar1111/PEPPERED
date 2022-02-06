@@ -38,6 +38,9 @@ TextureImporter:
   - first:
       213: 2297079452542655732
     second: Jeff The Manager_11
+  - first:
+      213: 5898557250326681542
+    second: Jeff The Manager_12
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -374,6 +377,27 @@ TextureImporter:
       bones: []
       spriteID: 4fc57a5779dd0ef10800000000000000
       internalID: 2297079452542655732
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jeff The Manager_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c7d6093192ebd150800000000000000
+      internalID: 5898557250326681542
       vertices: []
       indices: 
       edges: []

@@ -8,8 +8,8 @@ public class Mutilated_Move : MonoBehaviour
     [Header("MOVEMENT")]
     [SerializeField] private Animator MyAnim;
     [SerializeField] private Rigidbody2D MyRigidBody;
-    private float fHorizontalDampingWhenStopping = 0.08f;
-    private float fHorizontalDampingWhenTurning = 0.08f;
+    private float fHorizontalDampingWhenStopping = 0.01f;
+    private float fHorizontalDampingWhenTurning = 0.01f;
     private float fHorizontalVelocity;
 
     [Header("PLAYER")]

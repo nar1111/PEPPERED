@@ -16,12 +16,14 @@ public class State_Jeff_Lookout : State
     [SerializeField] private float TimeToProcess;
     [SerializeField] private GameObject Cam;
     [SerializeField] private Black_lines BLines;
+    [SerializeField] private Transform[] LookPoints;
     [HideInInspector] private bool Solved = false;
     private float Modifier;
     private float Timer = 0.1f;
     private float AnnoyLvl = 0;
     private float ChillTimer = 0;
     private bool Safer = false;
+    private int CurrentPoint = 0;
 
     [Header("UI")]
     [SerializeField] private Image StealthUI;
@@ -51,6 +53,10 @@ public class State_Jeff_Lookout : State
     {
         FOVFunction();
         AnnoyFunction();
+        if (AnnoyLvl == 0)
+        {
+            RotateNRK();
+        }
 
         if (AnnoyLvl >= 1)
         {
@@ -157,9 +163,14 @@ public class State_Jeff_Lookout : State
         }
         else
         {
-            JeffAnim.Play("Jeff_Idle");
             JeffShaker.Play("Shaker_Idle");
-            if (FieldOfView.gameObject.activeInHierarchy == false) { FieldOfView.gameObject.SetActive(true); AnnoyLvl = 0f; }
+            if (FieldOfView.gameObject.activeInHierarchy == false)
+            {
+                FieldOfView.gameObject.SetActive(true);
+                AnnoyLvl = 0f;
+                if (CurrentPoint == 0) { JeffAnim.Play("Jeff_Idle"); }
+                else { JeffAnim.Play("Jeff_Down"); }
+            }
         }
         AngerUI.fillAmount = AnnoyLvl / TimeToProcess;
     }
@@ -232,6 +243,21 @@ public class State_Jeff_Lookout : State
         DLMan.WhoTalks = TalkAnim;
         DLMan.DIStarter();
         #endregion
+    }
+
+    private void RotateNRK()
+    {
+        Vector3 dir = LookPoints[CurrentPoint].position - FieldOfView.gameObject.transform.position;
+        float angle = Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg;
+        Quaternion rotation = Quaternion.Euler(new Vector3(0, 0, angle));
+        FieldOfView.gameObject.transform.rotation = Quaternion.Slerp(FieldOfView.gameObject.transform.rotation, rotation, 3f * Time.deltaTime);
+
+        if (FieldOfView.gameObject.transform.rotation == rotation)
+        {
+            if (CurrentPoint < LookPoints.Length - 1)
+            { CurrentPoint++; JeffAnim.Play("Jeff_Down"); }
+            else { CurrentPoint = 0; JeffAnim.Play("Jeff_Idle"); }
+        }
     }
 
     #region Lines

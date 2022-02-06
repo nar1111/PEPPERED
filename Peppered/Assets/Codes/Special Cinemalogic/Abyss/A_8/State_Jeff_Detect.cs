@@ -39,6 +39,10 @@ public class State_Jeff_Detect : State
 
     IEnumerator Detected()
     {
+        if (DLMan.Playing)
+        {
+            DLMan.StopDialogue();
+        }
         yield return new WaitForSeconds(1.5f);
         Player.gameObject.transform.localScale = new Vector3(-1,1,1);
 

@@ -45,17 +45,53 @@ SpriteAtlas:
     packables:
     - {fileID: 2800000, guid: 32d7328dc59f74021b466a4b4982d29c, type: 3}
     - {fileID: 2800000, guid: abd08a87cff3947a2818f026d557ed23, type: 3}
-    totalSpriteSurfaceArea: 1441792
+    - {fileID: 2800000, guid: 88bedd7ef219c47f883afc9a7bb94bda, type: 3}
+    - {fileID: 2800000, guid: 01073c6c7a6f84230bb9973316aae4f3, type: 3}
+    - {fileID: 2800000, guid: 0cc3fab79c9f647979459a5e4c1f3258, type: 3}
+    - {fileID: 2800000, guid: 00509d21cd9e54111b7274e8902e69a8, type: 3}
+    - {fileID: 2800000, guid: 2146aa6fb4e5144588b4010c55afc5a6, type: 3}
+    - {fileID: 2800000, guid: 7baef1dba26954affbfc9b9648fc86ff, type: 3}
+    - {fileID: 2800000, guid: 921eb26282a2e41ca969202684883c5b, type: 3}
+    - {fileID: 2800000, guid: 330a977b5eaa74731bd98e1f4a38ea24, type: 3}
+    - {fileID: 2800000, guid: 13a412d5b27e94ccaabe094bcfc3bcd1, type: 3}
+    - {fileID: 2800000, guid: d4eba56e0bf8c41f3a5d4f983ea84aff, type: 3}
+    totalSpriteSurfaceArea: 2560140
     bindAsDefault: 1
     isAtlasV2: 0
     cachedData: {fileID: 0}
   m_MasterAtlas: {fileID: 0}
   m_PackedSprites:
+  - {fileID: 21300000, guid: 00509d21cd9e54111b7274e8902e69a8, type: 3}
+  - {fileID: -7858444652328195028, guid: 921eb26282a2e41ca969202684883c5b, type: 3}
+  - {fileID: -5852117263953457158, guid: 921eb26282a2e41ca969202684883c5b, type: 3}
+  - {fileID: 21300000, guid: 13a412d5b27e94ccaabe094bcfc3bcd1, type: 3}
   - {fileID: 21300000, guid: abd08a87cff3947a2818f026d557ed23, type: 3}
+  - {fileID: 21300000, guid: 0cc3fab79c9f647979459a5e4c1f3258, type: 3}
+  - {fileID: 21300000, guid: 330a977b5eaa74731bd98e1f4a38ea24, type: 3}
+  - {fileID: 2791474074071406629, guid: 7baef1dba26954affbfc9b9648fc86ff, type: 3}
+  - {fileID: 8543205906192847115, guid: 7baef1dba26954affbfc9b9648fc86ff, type: 3}
+  - {fileID: 6238880379051924633, guid: 7baef1dba26954affbfc9b9648fc86ff, type: 3}
+  - {fileID: 21300000, guid: 01073c6c7a6f84230bb9973316aae4f3, type: 3}
   - {fileID: 21300000, guid: 32d7328dc59f74021b466a4b4982d29c, type: 3}
+  - {fileID: 21300000, guid: d4eba56e0bf8c41f3a5d4f983ea84aff, type: 3}
+  - {fileID: 21300000, guid: 88bedd7ef219c47f883afc9a7bb94bda, type: 3}
+  - {fileID: 21300000, guid: 2146aa6fb4e5144588b4010c55afc5a6, type: 3}
   m_PackedSpriteNamesToIndex:
+  - Book 4
+  - Flip Pages_1
+  - Flip Pages_0
+  - Lizzy The Librarian 1
   - Library 2
+  - Book 3
+  - Opened Book
+  - Book Choose_2
+  - Book Choose_0
+  - Book Choose_1
+  - Book 2
   - Library 1
+  - Lizzy The Librarian 2
+  - Book 1
+  - Library Logo
   m_RenderDataMap: {}
   m_Tag: Libarary
   m_IsVariant: 0

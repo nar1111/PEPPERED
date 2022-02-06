@@ -18,11 +18,11 @@ public class State_BugMom_Alerted : State
     [SerializeField] private float MaxDist;
     private float Modifier;
     private float Timer = 0.1f;
+    private int MyStage = 0;
 
     [Header("UI")]
     [SerializeField] private Image StealthUI;
     [SerializeField] private GameObject LoadingBar;
-
 
     public override State RunCurrentState()
     {

@@ -16,6 +16,7 @@ public class State_CoffeChum_Ride : State
     [SerializeField] private bool FlipRen;
 
     [Header("PLAYER")]
+    [SerializeField] private Animator SittingAnim;
     [SerializeField] private PLAYER_CONTROLS Player;
     [SerializeField] private SpriteRenderer MyRen;
     [SerializeField] private GameObject AdditionalThing;
@@ -77,6 +78,11 @@ public class State_CoffeChum_Ride : State
         if (MySceneManager.CutscenePlaying == false)
         {
             MyRigidBody.velocity = new Vector2(fHorizontalVelocity, MyRigidBody.velocity.y);
+            if (SittingAnim != null)
+            {
+                if (Input.GetAxisRaw("Horizontal") != 0) { SittingAnim.Play("Sitting On The Ground Move"); }
+                else { SittingAnim.Play("Sitting On The Ground Idle"); }
+            }
         }
     }
 

@@ -80,7 +80,6 @@ public class State_Book_Choose : State
 
     IEnumerator VisualChange()
     {
-        AudiMan.Play("Paper");
         BookRen.color = new Color(1,1,1,0);
         Book.transform.position = MovePoints[BookSide].position;
         MoveSpeed = 0.1f;
@@ -90,7 +89,7 @@ public class State_Book_Choose : State
             BookRen.color = new Color(1, 1, 1, BookRen.color.a + 0.01f);
             Book.transform.position = Vector2.MoveTowards(Book.transform.position, MovePoints[1].position, MoveSpeed * Time.deltaTime);
             MoveSpeed = MoveSpeed + 0.08f;
-            yield return new WaitForSeconds(0.001f);
+            yield return new WaitForSeconds(0.0001f);
         }
         Press = false;
     }

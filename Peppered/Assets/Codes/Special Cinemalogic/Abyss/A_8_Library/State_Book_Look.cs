@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Experimental.Rendering.Universal;
 
 public class State_Book_Look : State
 {
@@ -16,6 +17,8 @@ public class State_Book_Look : State
     private State_Book_Choose ChooseState;
     [SerializeField]
     private GameObject Cam;
+    [SerializeField]
+    private Light2D LibraryLight;
 
 
     private int MyStage = 0;
@@ -82,8 +85,13 @@ public class State_Book_Look : State
 
         if (BChose.ButtonChoice == 1)
         {
-            MyStage = 1;
             Cam.SetActive(true);
+            while (LibraryLight.intensity > 0.2f)
+            {
+                LibraryLight.intensity = LibraryLight.intensity - 0.04f;
+                yield return new WaitForSeconds(0.01f);
+            }
+            MyStage = 1;
         } else
         {
             MyStage = 0;

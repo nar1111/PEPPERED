@@ -17,6 +17,7 @@ public class PLAYER_CONTROLS : MonoBehaviour
     [SerializeField]private float FallMultiplier = 3.4f;
     [SerializeField]private float LowJumpMultiplier = 2f;
     [SerializeField]private float JumpBuffer = 0.5f;
+    [HideInInspector]public bool JumpPermission = true;
     private float JumpBufferCount;
     private float CoyoteTime;
 
@@ -192,7 +193,7 @@ public class PLAYER_CONTROLS : MonoBehaviour
     private void JUMP()
     {
         //Jump Buffer
-        if (Input.GetButtonDown("Jump") && MySceneManager.CutscenePlaying == false && Ceiling == false && DiveKick != 1)
+        if (Input.GetButtonDown("Jump") && MySceneManager.CutscenePlaying == false && Ceiling == false && DiveKick != 1 && JumpPermission)
         {
             if (CanMove && RequestSlide == 0 || !CanMove && RequestSlide == 1 || !CanMove && DiveKick == 3 || CanMove && RequestSlide == 2)
             {
@@ -220,7 +221,7 @@ public class PLAYER_CONTROLS : MonoBehaviour
         }
 
         //Jump
-        if (JumpBufferCount >= 0 && CoyoteTime > 0f && DiveKick != 1 && JumpPressLimiter == 0)
+        if (JumpBufferCount >= 0 && CoyoteTime > 0f && DiveKick != 1 && JumpPressLimiter == 0 && JumpPermission)
         {
             if (MySceneManager.CutscenePlaying == false)
             {
@@ -466,5 +467,6 @@ public class PLAYER_CONTROLS : MonoBehaviour
        else if (JumpMode == 2) { MyAnim.Play("HighJump1"); }
     }
     #endregion
+
     #endregion
 }

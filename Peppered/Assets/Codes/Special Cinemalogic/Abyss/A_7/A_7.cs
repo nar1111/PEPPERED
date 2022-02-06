@@ -29,6 +29,7 @@ public class A_7 : MonoBehaviour
     [SerializeField]
     private State_Strawbo_Idle StrawboState;
     private MySceneManager Sceneman;
+    private int SeanTalked = 0;
 
     [Header("--DIALOGUE STUFF--")]
     [SerializeField]
@@ -236,7 +237,7 @@ public class A_7 : MonoBehaviour
         Speed[0] = 0.03f;
         Speed[1] = 0.07f;
         Line[0] = "[Laughs nervously]";
-        Line[1] = "- Oh. Oh, nuts. Usually, I'm supposed to let celebrities in. But, eh.";
+        Line[1] = "- Oh. Oh, nuts. Usually, I'm supposed to let famous people in. But, eh.";
         #region Go
         DLMan.DILines = Line;
         DLMan.DITextSpeed = Speed;
@@ -304,11 +305,11 @@ public class A_7 : MonoBehaviour
 
         if (MySceneManager.Cynthia != 3)
         {
-            Line[2] = "— They encourage pushing women of the balconies. And they won't stop until the God of Death is free.";
+            Line[2] = "— They encourage pushing women of the balconies. And they won't stop until we do something.";
         }
         else
         {
-            Line[2] = "— They harass women into giving them Life Stars. And they won't stop until the God of Death is free.";
+            Line[2] = "— They harass women into giving them Life Stars. And they won't stop until we do something.";
         }
         #region Go
         DLMan.DILines = Line;
@@ -495,7 +496,7 @@ public class A_7 : MonoBehaviour
         #endregion
         if (Angeri == 0)
         {
-            Line[0] = "You're not exactly sure what to make of this interaction.";
+            Line[0] = "[Silence]";
         }
         else
         {
@@ -517,12 +518,73 @@ public class A_7 : MonoBehaviour
     {
         MySceneManager.CutscenePlaying = true;
         Player.CanMove = false;
+        SceneMan.MStop();
+        SceneMan.MChange(16, 0.5f);
         Things[9].SetActive(false);
         Cams[6].SetActive(false);
         SFX[4].volume = 0f;
         Cutscene[4].Play();
         Done = false;
         while (Done == false) { yield return null; }
+        CharAnim[7].Play("Death_Start");
+        yield return new WaitForSeconds(2f);
+        Cams[10].SetActive(true);
+        CharAnim[7].Play("Death_End");
+        AudioMan.Play("News Loop");
+        AudioMan.Play("Dramatic Impact");
+
+        LineNum = 3;
+        DeclareLines();
+        #region Put things in
+        for (int i = 0; i < LineNum; i++)
+        {
+            Speed[i] = 0.03f;
+            Voice[i] = SFX[0];
+            TalkAnim[i] = null;
+        }
+        #endregion
+        Line[0] = "— The city is on a high alert, as every citizen is now on the lookout for the star thief.";
+        Line[1] = "— The police are advising the star thief to turn themselves in because, quote:";
+        Line[2] = "— «It's over. You have nowhere to go, perp. Quit wasting my time.»";
+        #region Go
+        DLMan.DILines = Line;
+        DLMan.DITextSpeed = Speed;
+        DLMan.DIVoice = Voice;
+        DLMan.Noise = Noise;
+        DLMan.WhoTalks = TalkAnim;
+        DLMan.DIStarter();
+        #endregion
+        while (DLMan.Playing) { yield return null; }
+
+        yield return new WaitForSeconds(1f);
+
+        LineNum = 1;
+        DeclareLines();
+        #region Put things in
+        for (int i = 0; i < LineNum; i++)
+        {
+            Speed[i] = 0.03f;
+            Voice[i] = SFX[0];
+            TalkAnim[i] = null;
+        }
+        #endregion
+        Line[0] = "— Whenever the star thief will give up or not remains uncertain.";
+        #region Go
+        DLMan.DILines = Line;
+        DLMan.DITextSpeed = Speed;
+        DLMan.DIVoice = Voice;
+        DLMan.Noise = Noise;
+        DLMan.WhoTalks = TalkAnim;
+        DLMan.DIStarter();
+        #endregion
+        while (DLMan.Playing) { yield return null; }
+
+        AudioMan.StopIt("News Loop");
+        AudioMan.Play("News End");
+        yield return new WaitForSeconds(1.7f);
+        CharAnim[7].Play("Death_Start");
+        Cams[10].SetActive(false);
+        yield return new WaitForSeconds(1f);
         MySceneManager.CutscenePlaying = false;
         Player.CanMove = true;
         Player.MyAnim.Play("Idle");
@@ -530,7 +592,6 @@ public class A_7 : MonoBehaviour
         Cams[8].SetActive(false);
         Cams[9].SetActive(false);
         Things[11].SetActive(true);
-        SceneMan.MChange(16, 0.5f);
         SceneMan.MPlay();
     }
 
@@ -557,6 +618,99 @@ public class A_7 : MonoBehaviour
         SceneMan.MFadeOut(0.001f, false);
     }
 
+    public void SeanTalk()
+    {
+        if (SeanTalked == 0) { SeanTalked = 1; StartCoroutine(Sean()); } else
+        {
+            LineNum = 1;
+            DeclareLines();
+            #region Put things in
+            for (int i = 0; i < LineNum; i++)
+            {
+                Speed[i] = 0.03f;
+                Voice[i] = SFX[0];
+                TalkAnim[i] = CharAnim[8];
+            }
+            #endregion
+            Line[0] = "— What? No, I don't pay other taxes either — I don't believe in them.";
+            #region Go
+            DLMan.DILines = Line;
+            DLMan.DITextSpeed = Speed;
+            DLMan.DIVoice = Voice;
+            DLMan.Noise = Noise;
+            DLMan.WhoTalks = TalkAnim;
+            DLMan.DIStarter();
+            #endregion
+        }
+    }
+
+    IEnumerator Sean()
+    {
+        MySceneManager.CutscenePlaying = true;
+        LineNum = 1;
+        DeclareLines();
+        #region Put things in
+        for (int i = 0; i < LineNum; i++)
+        {
+            Speed[i] = 0.03f;
+            Voice[i] = SFX[0];
+            TalkAnim[i] = CharAnim[8];
+        }
+        #endregion
+        Line[0] = "— Word of advice, «star thief»: avoid the sheeple.";
+        #region Go
+        DLMan.DILines = Line;
+        DLMan.DITextSpeed = Speed;
+        DLMan.DIVoice = Voice;
+        DLMan.Noise = Noise;
+        DLMan.WhoTalks = TalkAnim;
+        DLMan.DIStarter();
+        #endregion
+        while (DLMan.Playing) { yield return null; }
+
+        Things[13].SetActive(true);
+        AudioMan.Play("Ting");
+        yield return new WaitForSeconds(1f);
+
+        LineNum = 2;
+        DeclareLines();
+        #region Put things in
+        for (int i = 0; i < LineNum; i++)
+        {
+            Speed[i] = 0.03f;
+            Voice[i] = SFX[0];
+            TalkAnim[i] = CharAnim[8];
+        }
+        #endregion
+        Line[0] = "— If you see this icon, that means it's a sheeple, and they are looking for you.";
+        Line[1] = "— They listen to that crap on TV. But not me. I know you're not some extremist.";
+        #region Go
+        DLMan.DILines = Line;
+        DLMan.DITextSpeed = Speed;
+        DLMan.DIVoice = Voice;
+        DLMan.Noise = Noise;
+        DLMan.WhoTalks = TalkAnim;
+        DLMan.DIStarter();
+        #endregion
+        while (DLMan.Playing) { yield return null; }
+
+        Things[13].SetActive(false);
+        yield return new WaitForSeconds(1f);
+
+
+        Line[0] = "— You're from the IRS.";
+        Line[1] = "— Yes, scare me with «God of Death» fairy tale all you like — I'm not paying the «Prison Maintenance» tax.";
+        #region Go
+        DLMan.DILines = Line;
+        DLMan.DITextSpeed = Speed;
+        DLMan.DIVoice = Voice;
+        DLMan.Noise = Noise;
+        DLMan.WhoTalks = TalkAnim;
+        DLMan.DIStarter();
+        #endregion
+        while (DLMan.Playing) { yield return null; }
+        MySceneManager.CutscenePlaying = false;
+    }
 
     #region It's donskie
     public void CutsceneDone() { Done = true; }

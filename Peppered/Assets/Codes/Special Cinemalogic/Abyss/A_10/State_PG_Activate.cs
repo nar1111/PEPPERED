@@ -6,6 +6,7 @@ public class State_PG_Activate : State
 {
     [Header("STATES")]
     [SerializeField] private State_PG_Idle IdleState;
+    [SerializeField] private int ForbiddenTube;
 
     [Header("EVERYTHING ELSE")]
     [SerializeField] private Transform[] EntrancePoints;
@@ -13,6 +14,7 @@ public class State_PG_Activate : State
     [SerializeField] private Animator PlayerDecoy;
     [SerializeField] private int CurrentEntrance = 0;
     [SerializeField] private GameObject OutEffect;
+    [SerializeField] private AUDIOMANAGER Audiman;
 
     private int AnimState = 0;
     private int Limiter;
@@ -26,9 +28,10 @@ public class State_PG_Activate : State
 
         SwitchTube();
 
-        if (Input.GetButtonDown("Jump") && AnimState == 0)
+        if (Input.GetButtonDown("Jump") && AnimState == 0 && MySceneManager.CutscenePlaying == false && CurrentEntrance != ForbiddenTube)
         {
             IdleState.JumpOut(CurrentEntrance);
+            Audiman.Play("High Jump");
             PlayerDecoy.Play("Invisible");
             return IdleState;
         }
@@ -38,7 +41,7 @@ public class State_PG_Activate : State
 
     private void SwitchTube()
     {
-        if (Input.GetAxisRaw("Horizontal") == 1 && AnimState == 0 && Limiter == 0)
+        if (Input.GetAxisRaw("Horizontal") == 1 && AnimState == 0 && Limiter == 0 && MySceneManager.CutscenePlaying == false)
         {
             Limiter = 1;
             if (CurrentEntrance != EntrancePoints.Length - 1)
@@ -50,7 +53,7 @@ public class State_PG_Activate : State
                 PlayerDecoy.SetBool("Downbutton", true);
             }
         }
-        else if (Input.GetAxisRaw("Horizontal") == -1 && AnimState == 0 && Limiter == 0)
+        else if (Input.GetAxisRaw("Horizontal") == -1 && AnimState == 0 && Limiter == 0 && MySceneManager.CutscenePlaying == false)
         {
             Limiter = 1;
             if (CurrentEntrance != 0)
@@ -74,6 +77,7 @@ public class State_PG_Activate : State
         {
             ChangeTubeTimer = 0;
             AnimState = 0;
+            Audiman.Play("Boop");
             //Player.transform.position = EntrancePoints[CurrentEntrance].position;
             PlayerDecoy.transform.position = EntrancePoints[CurrentEntrance].position;
             PlayerDecoy.SetBool("Downbutton", false);

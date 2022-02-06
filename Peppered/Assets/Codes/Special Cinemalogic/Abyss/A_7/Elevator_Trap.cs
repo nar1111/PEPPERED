@@ -17,7 +17,6 @@ public class Elevator_Trap : MonoBehaviour
     private bool Activate = false;
     private float Timer;
 
-
     private void Start()
     {
         BottomPoint = transform.position;
@@ -36,6 +35,7 @@ public class Elevator_Trap : MonoBehaviour
             Activate = true;
             Audiman.Play("Elevator 1");
             Audiman.Play("Put Down");
+            Player.JumpPermission = false;
             if (WarningZone != null)
             {
                 WarningZone.SetActive(true);
@@ -79,8 +79,11 @@ public class Elevator_Trap : MonoBehaviour
 
             if (Player.transform.parent != null)
             {
+                Player.MyRigidBody.velocity = Vector2.zero;
                 Player.Bounce(BounceForce, 1);
             }
+
+            Player.JumpPermission = true;
         }
     }
 

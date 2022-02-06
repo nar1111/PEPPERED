@@ -23,7 +23,7 @@ SpriteAtlas:
     platformSettings:
     - serializedVersion: 3
       m_BuildTarget: DefaultTexturePlatform
-      m_MaxTextureSize: 1024
+      m_MaxTextureSize: 2048
       m_ResizeAlgorithm: 0
       m_TextureFormat: -1
       m_TextureCompression: 0
@@ -68,7 +68,11 @@ SpriteAtlas:
     - {fileID: 2800000, guid: 5f4626a0e86cd4fd79fed179f8c64dbb, type: 3}
     - {fileID: 2800000, guid: 603ca7ee5b1034ac78e50aeffc007ce3, type: 3}
     - {fileID: 2800000, guid: b69a3ad2d50aa4ba3bf1a2bd481b75ee, type: 3}
-    totalSpriteSurfaceArea: 1963276
+    - {fileID: 2800000, guid: 72fee89da6dc24c9a9240d1e797ac5d1, type: 3}
+    - {fileID: 2800000, guid: 11f99b9bd643a4562bc794ccce1918f9, type: 3}
+    - {fileID: 2800000, guid: 71f03e05fbec84e4386ba409f3b9bd49, type: 3}
+    - {fileID: 2800000, guid: 13731f0a518e14f019b88a3046d3ae2a, type: 3}
+    totalSpriteSurfaceArea: 2217391
     bindAsDefault: 1
     isAtlasV2: 0
     cachedData: {fileID: 0}
@@ -118,6 +122,7 @@ SpriteAtlas:
   - {fileID: 1058241202020254370, guid: 315286e4a8747452a83e1842aeb69cbf, type: 3}
   - {fileID: -48391898343746770, guid: 315286e4a8747452a83e1842aeb69cbf, type: 3}
   - {fileID: 21300000, guid: 46bc38f45f96c498d9b703adfd9da69e, type: 3}
+  - {fileID: 21300000, guid: 71f03e05fbec84e4386ba409f3b9bd49, type: 3}
   - {fileID: -1819214681056430070, guid: 6546a935d488247739affd7af6cf7d38, type: 3}
   - {fileID: -7709057502972477860, guid: 6546a935d488247739affd7af6cf7d38, type: 3}
   - {fileID: 3287505800185660575, guid: 6546a935d488247739affd7af6cf7d38, type: 3}
@@ -127,6 +132,7 @@ SpriteAtlas:
   - {fileID: -4222982557481709342, guid: 41002ce5b0dd946089f42f492fc817e1, type: 3}
   - {fileID: 1980868889932428595, guid: 73dc4cf6f546d4bd6ba91c1aba1c58f2, type: 3}
   - {fileID: 2297079452542655732, guid: 73dc4cf6f546d4bd6ba91c1aba1c58f2, type: 3}
+  - {fileID: 5898557250326681542, guid: 73dc4cf6f546d4bd6ba91c1aba1c58f2, type: 3}
   - {fileID: -1433138888936141865, guid: 73dc4cf6f546d4bd6ba91c1aba1c58f2, type: 3}
   - {fileID: -7108216850996104635, guid: 73dc4cf6f546d4bd6ba91c1aba1c58f2, type: 3}
   - {fileID: -3586058387574409628, guid: 73dc4cf6f546d4bd6ba91c1aba1c58f2, type: 3}
@@ -157,6 +163,7 @@ SpriteAtlas:
   - {fileID: -8936078631422335513, guid: cf49a9791dd1d445991681cb441b3ba4, type: 3}
   - {fileID: 6426597828295369090, guid: cf49a9791dd1d445991681cb441b3ba4, type: 3}
   - {fileID: -5484720787126614559, guid: cf49a9791dd1d445991681cb441b3ba4, type: 3}
+  - {fileID: 21300000, guid: 13731f0a518e14f019b88a3046d3ae2a, type: 3}
   - {fileID: 3809428095450413969, guid: fa00ac6a6b88a4629b455b99903e27ba, type: 3}
   - {fileID: 4375860975576269335, guid: fa00ac6a6b88a4629b455b99903e27ba, type: 3}
   - {fileID: -4114548118298958287, guid: fa00ac6a6b88a4629b455b99903e27ba, type: 3}
@@ -165,6 +172,12 @@ SpriteAtlas:
   - {fileID: -6462476825442502614, guid: fa00ac6a6b88a4629b455b99903e27ba, type: 3}
   - {fileID: 21300000, guid: f67c6a9a6b0564ad981efe34c17934d4, type: 3}
   - {fileID: 21300000, guid: bd28c5faad8c046dbba54c30f0205eb4, type: 3}
+  - {fileID: 5051508904922651275, guid: 11f99b9bd643a4562bc794ccce1918f9, type: 3}
+  - {fileID: 3678612094793333745, guid: 11f99b9bd643a4562bc794ccce1918f9, type: 3}
+  - {fileID: -8566067174151722361, guid: 11f99b9bd643a4562bc794ccce1918f9, type: 3}
+  - {fileID: 6588964110496072725, guid: 11f99b9bd643a4562bc794ccce1918f9, type: 3}
+  - {fileID: -2530223344488208461, guid: 11f99b9bd643a4562bc794ccce1918f9, type: 3}
+  - {fileID: 3804467119579933163, guid: 11f99b9bd643a4562bc794ccce1918f9, type: 3}
   - {fileID: 21300000, guid: 2506838cd024a4c5393b9ca2a523f88e, type: 3}
   - {fileID: 3509847170834786703, guid: 2898ddccf16024e948aec12761ca1a89, type: 3}
   - {fileID: 6586464535268155269, guid: 2898ddccf16024e948aec12761ca1a89, type: 3}
@@ -176,6 +189,12 @@ SpriteAtlas:
   - {fileID: -2163401208428727399, guid: 2898ddccf16024e948aec12761ca1a89, type: 3}
   - {fileID: 1756988737007799742, guid: 2898ddccf16024e948aec12761ca1a89, type: 3}
   - {fileID: 2364218640639357629, guid: 2898ddccf16024e948aec12761ca1a89, type: 3}
+  - {fileID: -7144219350651880615, guid: 72fee89da6dc24c9a9240d1e797ac5d1, type: 3}
+  - {fileID: -4643302984181757817, guid: 72fee89da6dc24c9a9240d1e797ac5d1, type: 3}
+  - {fileID: 4999135938867420582, guid: 72fee89da6dc24c9a9240d1e797ac5d1, type: 3}
+  - {fileID: -8952872100758227040, guid: 72fee89da6dc24c9a9240d1e797ac5d1, type: 3}
+  - {fileID: 8943732022327557959, guid: 72fee89da6dc24c9a9240d1e797ac5d1, type: 3}
+  - {fileID: 1780782773100000253, guid: 72fee89da6dc24c9a9240d1e797ac5d1, type: 3}
   - {fileID: 21300000, guid: 603ca7ee5b1034ac78e50aeffc007ce3, type: 3}
   - {fileID: 21300000, guid: 9df0920fd3f0c468ab4f7b40837284b2, type: 3}
   - {fileID: 1013974454648684250, guid: 60dd9d4fdba514e4080107afb10b4c4d, type: 3}
@@ -230,6 +249,7 @@ SpriteAtlas:
   - Bug Mom Idle_3
   - Bug Mom Idle_2
   - Bouncer Hand 2
+  - Toney Baloney 1
   - Scarlett_0
   - Scarlett_1
   - Scarlett_2
@@ -239,6 +259,7 @@ SpriteAtlas:
   - No, he's not a pimp_1
   - Jeff The Manager_10
   - Jeff The Manager_11
+  - Jeff The Manager_12
   - Jeff The Manager_1
   - Jeff The Manager_0
   - Jeff The Manager_3
@@ -269,6 +290,7 @@ SpriteAtlas:
   - Cynthia Stand_5
   - Cynthia Stand_6
   - Cynthia Stand_7
+  - Toney Baloney 2
   - Granma Turtleneck_3
   - Granma Turtleneck_2
   - Granma Turtleneck_1
@@ -277,6 +299,12 @@ SpriteAtlas:
   - Granma Turtleneck_4
   - Bouncer Hand 1
   - CrowdGroup4
+  - Bug Kids_3
+  - Bug Kids_2
+  - Bug Kids_1
+  - Bug Kids_0
+  - Bug Kids_5
+  - Bug Kids_4
   - CrowdGroup3
   - Benjamin Bubbleston_8
   - Benjamin Bubbleston_9
@@ -288,6 +316,12 @@ SpriteAtlas:
   - Benjamin Bubbleston_1
   - Benjamin Bubbleston_2
   - Benjamin Bubbleston_3
+  - Bug Mom Talk_5
+  - Bug Mom Talk_4
+  - Bug Mom Talk_1
+  - Bug Mom Talk_0
+  - Bug Mom Talk_3
+  - Bug Mom Talk_2
   - Homeless Man
   - CrowdGroup1
   - Barista1_1

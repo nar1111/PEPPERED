@@ -567,6 +567,30 @@ MonoBehaviour:
     Pitch: 1
     Loop: 0
     Source: {fileID: 0}
+  - Name: Soda
+    Clip: {fileID: 8300000, guid: ccdb21505f5de443c99d3141b2728a8d, type: 3}
+    Volume: 0.65
+    Pitch: 1
+    Loop: 0
+    Source: {fileID: 0}
+  - Name: News Loop
+    Clip: {fileID: 8300000, guid: fb1842be76746466bb71a920b2692245, type: 3}
+    Volume: 0.65
+    Pitch: 1
+    Loop: 1
+    Source: {fileID: 0}
+  - Name: News End
+    Clip: {fileID: 8300000, guid: 8a13ceddd2b6b45b98e825f07979a87f, type: 3}
+    Volume: 0.65
+    Pitch: 1
+    Loop: 0
+    Source: {fileID: 0}
+  - Name: Wind Long
+    Clip: {fileID: 8300000, guid: 6aba6fcccc62949cdb7c0339fdea1e91, type: 3}
+    Volume: 0.6
+    Pitch: 1
+    Loop: 1
+    Source: {fileID: 0}
 --- !u!1 &627574841459526559
 GameObject:
   m_ObjectHideFlags: 0

@@ -19,6 +19,7 @@ public class State_BugMom_Patrol : State
 
     [Header("FUNCTIONALITY")]
     [SerializeField] private State_BugMom_Alerted AlertState;
+    [SerializeField] private GameObject Me;
     public FOV FieldOfView;
 
     private int CurrentTarget = 0;
@@ -29,6 +30,7 @@ public class State_BugMom_Patrol : State
     {
         Timer = WaitTime;
         StrPoint = MomObj.transform;
+        if (WHAT_HAVE_I_DONE.Collectibles.ContainsKey("BugMom")) { Destroy(Me); }
     }
 
     public override State RunCurrentState()

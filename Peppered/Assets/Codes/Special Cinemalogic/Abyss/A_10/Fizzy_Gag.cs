@@ -11,13 +11,14 @@ public class Fizzy_Gag : MonoBehaviour
     [SerializeField] private PlayableDirector[] Cutscene;
     [SerializeField] private Animator TheoAnim;
     [SerializeField] private Black_lines BLines;
-    [SerializeField] private AudioSource Harp;
+    [SerializeField] private AUDIOMANAGER Audiman;
 
     [Header("--DIALOGUE STUFF--")]
     [SerializeField] private Text[] Description;
     [SerializeField] private Button_Choose BChose;
     [SerializeField] private DialogueManager DLMan;
     [SerializeField] private AudioSource[] SFX;
+    private MySceneManager Sceneman;
     private bool Done = false;
     private bool Tried = false;
 
@@ -79,16 +80,21 @@ public class Fizzy_Gag : MonoBehaviour
 
             if (BChose.ButtonChoice == 1)
             {
+                if (Sceneman == null) { Sceneman = FindObjectOfType<MySceneManager>(); }
+                Sceneman.MFadeOut(0.01f, true);
                 //Drink
                 yield return new WaitForSeconds(1f);
+                Audiman.Play("Boop");
                 TheoAnim.Play("Teo_G_Open");
                 yield return new WaitForSeconds(3f);
                 TheoAnim.Play("Teo_G_Empty");
+                Audiman.Play("Put Down");
                 Player.MyAnim.Play("Drink 1");
-                yield return new WaitForSeconds(1f);
+                yield return new WaitForSeconds(2f);
+                Audiman.Play("Soda");
                 Player.MyAnim.Play("Drink 2");
                 Done = false;
-                Harp.Play();
+                
                 Cutscene[0].Play();
                 while (Done == false) { yield return null; }
                 Cutscene[0].Pause();
@@ -121,6 +127,7 @@ public class Fizzy_Gag : MonoBehaviour
                 MySceneManager.CutscenePlaying = false;
                 TheoAnim.Play("Teo_G_Idle");
                 Tried = true;
+                Sceneman.MPlay();
             }
             else
             {

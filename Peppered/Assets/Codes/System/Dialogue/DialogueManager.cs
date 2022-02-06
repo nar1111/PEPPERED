@@ -103,6 +103,19 @@ public class DialogueManager : MonoBehaviour {
 
     }
 
+    public void StopDialogue()
+    {
+        StopCoroutine(StartDialogue());
+        TextBox.text = "";
+        Pointer.SetActive(false);
+        DialogueBox.SetActive(false);
+        if (Player == null) { if (Chplayer != null) { Chplayer.CanMove = true; } }
+        else if (Player != null) { Player.CanMove = true; }
+        Currentline = 0;
+        Playing = false;
+        BitchOneAtTheTime = false;
+    }
+
     #region Выбор
     IEnumerator StartChoice() 
     {

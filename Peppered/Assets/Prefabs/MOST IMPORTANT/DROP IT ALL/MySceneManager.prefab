@@ -50,8 +50,8 @@ MonoBehaviour:
   CheckPointX: 0
   CheckPointY: 0
   CheckPointZ: 0
-  BGVol: 0
-  CurrentSongNum: 15
+  BGVol: 0.6
+  CurrentSongNum: 17
   Music: {fileID: 3085424643750991679}
   Void: {fileID: 1652049410}
   Track:
@@ -72,6 +72,7 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 2a52ed83d03db4f29a33b7336bca5f21, type: 3}
   - {fileID: 8300000, guid: 3b5e7e429bf574c5b9191fda82b5cc5a, type: 3}
   - {fileID: 8300000, guid: 47033c89fbca24f56aa7c8a0891d25fe, type: 3}
+  - {fileID: 8300000, guid: c7723fbca5f5c4789a619eaa3ba2f6ba, type: 3}
   RespawnLocationTrack: 0
 --- !u!82 &3085424643750991679
 AudioSource:
