@@ -16,6 +16,10 @@ public class State_PG_Activate : State
     [SerializeField] private GameObject OutEffect;
     [SerializeField] private AUDIOMANAGER Audiman;
 
+    [Header("GUIDES")]
+    [SerializeField] private GameObject Pointer;
+    [SerializeField] private Transform[] MovePoints;
+
     private int AnimState = 0;
     private int Limiter;
     private float ChangeTubeTimer = 0;
@@ -23,6 +27,8 @@ public class State_PG_Activate : State
     public override State RunCurrentState()
     {
         Player.transform.position = new Vector2(EntrancePoints[CurrentEntrance].position.x, EntrancePoints[CurrentEntrance].position.y + 0.4f);
+
+        GoPointerGo();
 
         Timer();
 
@@ -33,6 +39,7 @@ public class State_PG_Activate : State
             IdleState.JumpOut(CurrentEntrance);
             Audiman.Play("High Jump");
             PlayerDecoy.Play("Invisible");
+            Pointer.SetActive(false);
             return IdleState;
         }
 
@@ -90,12 +97,22 @@ public class State_PG_Activate : State
     {
         AnimState = 1;
         ChangeTubeTimer = 0.5f;
+        Pointer.SetActive(true);
+        Pointer.transform.position = new Vector3(MovePoints[CurrentEntrance].position.x, MovePoints[CurrentEntrance].position.y + 1.5f);
         for (int i = 0; i < EntrancePoints.Length; i++)
         {
             if (EnteredHere.position == EntrancePoints[i].position)
             {
                 CurrentEntrance = i;
             }
+        }
+    }
+
+    private void GoPointerGo()
+    {
+        if (Vector2.Distance(Pointer.transform.position, MovePoints[CurrentEntrance].position) > 0.03f)
+        {
+            Pointer.transform.position = Vector2.MoveTowards(Pointer.transform.position, MovePoints[CurrentEntrance].position, 10f * Time.deltaTime);
         }
     }
 }

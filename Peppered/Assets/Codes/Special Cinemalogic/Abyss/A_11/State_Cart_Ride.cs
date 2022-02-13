@@ -11,8 +11,7 @@ public class State_Cart_Ride : State
     [SerializeField] private float BoostTime;
 
     private float CurrentBoost;
-    private float PushChargeTimer = 0;
-    private float MaxBoostTimer = -0.1f;
+    private float MaxBoostTimer = 0f;
     private bool Boosting = false;
 
     [Header("Navigation")]
@@ -25,7 +24,6 @@ public class State_Cart_Ride : State
     [SerializeField] private State_Cart_Idle IdleState;
 
     [Header("Cosmetics")]
-    [SerializeField] private GameObject CartPlayer;
     [SerializeField] private PLAYER_CONTROLS Player;
     [SerializeField] private Animator Myanim;
 
@@ -48,33 +46,20 @@ public class State_Cart_Ride : State
             Player.Wind = true;
             Player.gameObject.transform.parent = null;
             Player.MyAnim.Play("Take Off");
+            Myanim.Play("Cart_Exit");
             Player.CanMove = true;
             Player.Bounce(12f, 2);
             MaxBoostTimer = -0.1f;
             Boosting = false;
             Press = false;
-            CartPlayer.SetActive(false);
             MyRigidbody.velocity = new Vector2(MyRigidbody.velocity.x / 2f, MyRigidbody.velocity.y);
             return IdleState;
         }
         #endregion
 
-        #region Booster
-        if (MaxBoostTimer > 0)
-        {
-            MaxBoostGo();
-            MaxBoostTimer -= Time.deltaTime;
-            Boosting = true;
-        } else if (MaxBoostTimer < 0)
-        {
-            MaxBoostTimer = -0.1f;
-            Boosting = false;
+        SmallPush();
 
-            Charge();
-
-            Boost();
-        }
-        #endregion
+        BigPush();
 
         #region Jumping
         if (!Grounded)
@@ -85,6 +70,7 @@ public class State_Cart_Ride : State
                 MaxBoostTimer = -0.1f;
                 Boosting = false;
             }
+            Myanim.Play("Cart_Jump");
             return CartJump;
         }
         #endregion
@@ -92,66 +78,70 @@ public class State_Cart_Ride : State
         return this;
     }
 
-    private void Charge()
+    private void SmallPush()
     {
-        if (Input.GetAxisRaw("Horizontal") != 0)
+        //Pressed
+        if (Input.GetAxisRaw("Horizontal") != 0 && Press == false && !Boosting)
         {
-            // Charging
             Press = true;
+            CurrentBoost = MinBoost;
             Direction = Input.GetAxisRaw("Horizontal");
 
-            if (PushChargeTimer < BoostTime)
+            //Slow Down
+            if (MyRigidbody.velocity.magnitude > 2f && MyRigidbody.gameObject.transform.localScale.x != Direction)
             {
-                Myanim.Play("Cart Charge", 0, 0);
-                PushChargeTimer += Time.deltaTime;
-                CurrentBoost = MinBoost;
-            }
-            else if (PushChargeTimer > BoostTime)
+                MyRigidbody.gameObject.transform.localScale = new Vector3(Direction, 1, 1);
+                MyRigidbody.velocity = new Vector2(MyRigidbody.velocity.x / 3f, MyRigidbody.velocity.y);
+                Myanim.Play("Cart_Land");
+            } else
             {
-                CurrentBoost = MaxBoost;
-                Myanim.Play("Cart Charge Full");
+                Myanim.Play("Cart_Push", 0, 0);
+                MyRigidbody.gameObject.transform.localScale = new Vector3(Direction, 1, 1);
+
+                //Push
+                if (Direction > 0)
+                {
+                    MyRigidbody.AddForce(MyRigidbody.transform.right * CurrentBoost, ForceMode2D.Impulse);
+                }
+                else
+                {
+                    MyRigidbody.AddForce(-MyRigidbody.transform.right * CurrentBoost, ForceMode2D.Impulse);
+                }
             }
         }
-    }
-
-    private void Boost()
-    {
-        if (Input.GetAxisRaw("Horizontal") == 0f && Press == true && CurrentBoost != MaxBoost)
+        //Depressed (lol)
+        if (Input.GetAxisRaw("Horizontal") == 0f && Press == true)
         {
             Press = false;
-            PushChargeTimer = 0;
-            Myanim.Play("Card Push", 0, 0);
-            MyRigidbody.gameObject.transform.localScale = new Vector3 (Direction, 1, 1);
+        }
 
+    }
+
+    private void BigPush()
+    {
+        if (Input.GetButtonDown("Skip") && !Boosting)
+        {
+            Boosting = true;
+            MaxBoostTimer = 1f;
+            Myanim.Play("Cart_Max_Push");
+        }
+
+        if (MaxBoostTimer > 0f && Boosting && MyRigidbody.velocity.magnitude > 0.1f)
+        {
+            MaxBoostTimer -= Time.deltaTime;
             if (Direction > 0)
             {
-                MyRigidbody.AddForce(MyRigidbody.transform.right * CurrentBoost, ForceMode2D.Impulse);
+                MyRigidbody.velocity = new Vector2(MaxBoost, MyRigidbody.velocity.y);
             }
             else
             {
-                MyRigidbody.AddForce(-MyRigidbody.transform.right * CurrentBoost, ForceMode2D.Impulse);
+                MyRigidbody.velocity = new Vector2(-MaxBoost, MyRigidbody.velocity.y);
             }
-
-        } else if (Input.GetAxisRaw("Horizontal") == 0f && Press == true && CurrentBoost == MaxBoost)
+        } else if (MaxBoostTimer <= 0f && Boosting || MyRigidbody.velocity.magnitude < 0.1f && Boosting)
         {
-            Press = false;
-            MaxBoostTimer = 1f;
-            PushChargeTimer = 0;
-            Myanim.Play("Card Push", 0, 0);
-            MyRigidbody.gameObject.transform.localScale = new Vector3(Direction, 1, 1);
-        }
-    }
-
-    private void MaxBoostGo()
-    {
-        Boosting = true;
-        if (Direction > 0)
-        {
-            MyRigidbody.velocity = new Vector2(MaxBoost, MyRigidbody.velocity.y);
-        }
-        else
-        {
-            MyRigidbody.velocity = new Vector2(-MaxBoost, MyRigidbody.velocity.y);
+            Boosting = false;
+            MaxBoostTimer = 0;
+            Myanim.Play("Cart_Land");
         }
     }
 
@@ -169,4 +159,8 @@ public class State_Cart_Ride : State
         Grounded = Physics2D.OverlapCircle(GroundChecker.position, .02f, Ground);
     }
 
+    public void DirectMeBitch()
+    {
+        Direction = MyRigidbody.gameObject.transform.localScale.x;
+    }
 }

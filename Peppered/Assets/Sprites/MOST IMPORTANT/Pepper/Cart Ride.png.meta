@@ -23,6 +23,45 @@ TextureImporter:
   - first:
       213: 8316015870016758763
     second: Cart Ride_6
+  - first:
+      213: 4010854279113588354
+    second: Cart Ride_7
+  - first:
+      213: -437397290125757838
+    second: Cart Ride_8
+  - first:
+      213: 8090395717407767654
+    second: Cart Ride_9
+  - first:
+      213: -6166793533944361930
+    second: Cart Ride_10
+  - first:
+      213: 5130347419957050725
+    second: Cart Ride_11
+  - first:
+      213: -5201334165504130360
+    second: Cart Ride_12
+  - first:
+      213: -7642959381223111124
+    second: Cart Ride_13
+  - first:
+      213: -3307054553986818408
+    second: Cart Ride_14
+  - first:
+      213: -6250904036659835025
+    second: Cart Ride_15
+  - first:
+      213: -6789088469480299162
+    second: Cart Ride_16
+  - first:
+      213: 6681246811726763354
+    second: Cart Ride_17
+  - first:
+      213: -3106546950257408838
+    second: Cart Ride_18
+  - first:
+      213: -2903204232993435592
+    second: Cart Ride_19
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -86,7 +125,7 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 512
+    maxTextureSize: 1024
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 0
@@ -98,7 +137,7 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Standalone
-    maxTextureSize: 512
+    maxTextureSize: 1024
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 0
@@ -116,9 +155,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 128
-        width: 128
-        height: 128
+        y: 386
+        width: 176
+        height: 126
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -136,10 +175,10 @@ TextureImporter:
       name: Cart Ride_1
       rect:
         serializedVersion: 2
-        x: 128
-        y: 128
-        width: 128
-        height: 128
+        x: 176
+        y: 386
+        width: 176
+        height: 126
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -157,10 +196,10 @@ TextureImporter:
       name: Cart Ride_2
       rect:
         serializedVersion: 2
-        x: 256
-        y: 128
-        width: 128
-        height: 128
+        x: 352
+        y: 386
+        width: 176
+        height: 126
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -178,10 +217,10 @@ TextureImporter:
       name: Cart Ride_3
       rect:
         serializedVersion: 2
-        x: 384
-        y: 128
-        width: 128
-        height: 128
+        x: 528
+        y: 386
+        width: 176
+        height: 126
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -199,10 +238,10 @@ TextureImporter:
       name: Cart Ride_4
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 128
-        height: 128
+        x: 704
+        y: 386
+        width: 176
+        height: 126
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -220,10 +259,10 @@ TextureImporter:
       name: Cart Ride_5
       rect:
         serializedVersion: 2
-        x: 128
-        y: 0
-        width: 128
-        height: 128
+        x: 0
+        y: 260
+        width: 176
+        height: 126
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -241,10 +280,10 @@ TextureImporter:
       name: Cart Ride_6
       rect:
         serializedVersion: 2
-        x: 256
-        y: 0
-        width: 128
-        height: 128
+        x: 176
+        y: 260
+        width: 176
+        height: 126
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -254,6 +293,279 @@ TextureImporter:
       bones: []
       spriteID: be32cd6af5c686370800000000000000
       internalID: 8316015870016758763
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cart Ride_7
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 260
+        width: 176
+        height: 126
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28ebb6867ba69a730800000000000000
+      internalID: 4010854279113588354
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cart Ride_8
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 260
+        width: 176
+        height: 126
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 272f5586b7d0ee9f0800000000000000
+      internalID: -437397290125757838
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cart Ride_9
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 260
+        width: 176
+        height: 126
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66c7e6c4a0cd64070800000000000000
+      internalID: 8090395717407767654
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cart Ride_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 134
+        width: 176
+        height: 126
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63c021634f52b6aa0800000000000000
+      internalID: -6166793533944361930
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cart Ride_11
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 134
+        width: 176
+        height: 126
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 56db1e4fbc7a23740800000000000000
+      internalID: 5130347419957050725
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cart Ride_12
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 134
+        width: 176
+        height: 126
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c20603622621d7b0800000000000000
+      internalID: -5201334165504130360
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cart Ride_13
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 134
+        width: 176
+        height: 126
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c260579dfe0cee590800000000000000
+      internalID: -7642959381223111124
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cart Ride_14
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 134
+        width: 176
+        height: 126
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 89e17c8976bfa12d0800000000000000
+      internalID: -3307054553986818408
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cart Ride_15
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 8
+        width: 176
+        height: 126
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f6fc5d9b5e35049a0800000000000000
+      internalID: -6250904036659835025
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cart Ride_16
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 8
+        width: 176
+        height: 126
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6652de3d10058c1a0800000000000000
+      internalID: -6789088469480299162
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cart Ride_17
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 8
+        width: 176
+        height: 126
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a555fa5939e88bc50800000000000000
+      internalID: 6681246811726763354
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cart Ride_18
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 8
+        width: 176
+        height: 126
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab485d7020453e4d0800000000000000
+      internalID: -3106546950257408838
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cart Ride_19
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 8
+        width: 176
+        height: 126
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8301406c12fb5b7d0800000000000000
+      internalID: -2903204232993435592
       vertices: []
       indices: 
       edges: []

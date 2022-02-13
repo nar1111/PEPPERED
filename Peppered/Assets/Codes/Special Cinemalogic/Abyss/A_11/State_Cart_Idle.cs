@@ -11,22 +11,23 @@ public class State_Cart_Idle : State
 
     [Header ("Player")]
     [SerializeField] private PLAYER_CONTROLS Player;
-    [SerializeField] private GameObject CartPlayer;
+    [SerializeField] private Animator MyAnim;
 
 
     public override State RunCurrentState()
     {
         RelaunchUse();
 
-        if (Vector2.Distance(Player.gameObject.transform.position, transform.position) < TriggerRaidus && Player.MyRigidBody.velocity.y < -0.1f && Used == 0)
+        if (Vector2.Distance(Player.gameObject.transform.position, transform.position) < TriggerRaidus && Player.MyRigidBody.velocity.y < -0.1f && Used == 0 && Player.CanMove == true)
         {
             Player.MyAnim.Play("Invisible");
             Player.CanMove = false;
             Player.transform.position = transform.position;
             Player.MyRigidBody.velocity = Vector2.zero;
-            CartPlayer.SetActive(true);
+            MyAnim.Play("Cart_Land");
             Used = 1f;
             Player.Wind = false;
+            RideState.DirectMeBitch();
             return RideState;
         }
        return this;

@@ -14,12 +14,13 @@ public class State_Cart_Jump : State
     [SerializeField] private Transform GroundChecker;
     [SerializeField] private LayerMask Ground;
     [SerializeField] private bool Grounded;
+    private float MyDir;
 
 
     [Header("Cosmetics")]
     [SerializeField] private PLAYER_CONTROLS Player;
     [SerializeField] private GameObject LandingDust;
-    [SerializeField] private GameObject Cart;
+    [SerializeField] private Animator MyAnim;
     private float HangTime = 0f;
 
     public override State RunCurrentState()
@@ -32,10 +33,13 @@ public class State_Cart_Jump : State
 
         HangTimeTimer();
 
+        UnstuckMe();
+
         if (Grounded)
         {
-            if (HangTime > 0.5f) { Instantiate(LandingDust, Cart.transform.position, Quaternion.identity); }
+            if (HangTime > 0.5f) { Instantiate(LandingDust, transform.position, Quaternion.identity); }
             MyRigidbody.velocity = new Vector2(MyRigidbody.velocity.x / 2, MyRigidbody.velocity.y);
+            MyAnim.Play("Cart_Land");
             return CartRide;
         }
 
@@ -50,6 +54,7 @@ public class State_Cart_Jump : State
     public void JumpNow(bool MaxBoost, float Direction)
     {
         HangTime = 0f;
+        MyDir = Direction;
         if (MaxBoost)
         {
             MyRigidbody.AddForce(MyRigidbody.transform.up * 18, ForceMode2D.Impulse);
@@ -91,4 +96,20 @@ public class State_Cart_Jump : State
         }
     }
 
+    private void UnstuckMe()
+    {
+        if (MyRigidbody.velocity.magnitude < 0.1f && !Grounded)
+        {
+            MyRigidbody.velocity = Vector2.zero;
+            MyRigidbody.AddForce(MyRigidbody.transform.up * 8, ForceMode2D.Impulse);
+            if (MyDir > 0)
+            {
+                MyRigidbody.AddForce(MyRigidbody.transform.right * 3, ForceMode2D.Impulse);
+            }
+            else
+            {
+                MyRigidbody.AddForce(-MyRigidbody.transform.right * 3, ForceMode2D.Impulse);
+            }
+        }
+    }
 }

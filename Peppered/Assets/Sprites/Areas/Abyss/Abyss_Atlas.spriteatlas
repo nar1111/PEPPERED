@@ -82,7 +82,6 @@ SpriteAtlas:
     - {fileID: 2800000, guid: e94f653296bb24fd19075f2d2c74b939, type: 3}
     - {fileID: 2800000, guid: 522a8654509334d8683761414b0b78dc, type: 3}
     - {fileID: 2800000, guid: 1c8e8318999c54c18bfb9eef8e5c63b7, type: 3}
-    - {fileID: 2800000, guid: c015b57c9036b4873908dacc82154f79, type: 3}
     - {fileID: 2800000, guid: 3e8f6a92a4a704217a3a6bd9055a0bec, type: 3}
     - {fileID: 2800000, guid: 4eee0fcb9965447c6b71122445f24f79, type: 3}
     - {fileID: 2800000, guid: 3d852912f97d04ed68179f88af8a57f1, type: 3}
@@ -185,7 +184,10 @@ SpriteAtlas:
     - {fileID: 2800000, guid: cf9b408fe3fb44e8fb40abe6f35c0891, type: 3}
     - {fileID: 2800000, guid: cd7260490202a442193ba5bd18a4d0c1, type: 3}
     - {fileID: 2800000, guid: cdc3f6a2e63874e7cae4d223067be8b5, type: 3}
-    totalSpriteSurfaceArea: 7846071
+    - {fileID: 2800000, guid: a3ba2bc6570724d7e8e7288a7089638a, type: 3}
+    - {fileID: 2800000, guid: 888fbaa1e9e784144bc36cf43ff2eadc, type: 3}
+    - {fileID: 2800000, guid: b7aa2ce83349048f1bf66bc649fbcd7e, type: 3}
+    totalSpriteSurfaceArea: 8048087
     bindAsDefault: 1
     isAtlasV2: 0
     cachedData: {fileID: 0}
@@ -225,6 +227,7 @@ SpriteAtlas:
   - {fileID: -6582828046582990408, guid: 901fc0a178b894083966f311d2078bff, type: 3}
   - {fileID: -6897421571307562902, guid: 901fc0a178b894083966f311d2078bff, type: 3}
   - {fileID: 21300000, guid: f5a485a1dd2d34a859686ac48100c695, type: 3}
+  - {fileID: 21300000, guid: 888fbaa1e9e784144bc36cf43ff2eadc, type: 3}
   - {fileID: 21300000, guid: 1a4c3bf1520d6452c9b769c2c93196e9, type: 3}
   - {fileID: 21300000, guid: b664bbf168f0a4138ae55f7fb1947d26, type: 3}
   - {fileID: 21300000, guid: bcb981120db924155afcdfc3a25050ed, type: 3}
@@ -354,6 +357,7 @@ SpriteAtlas:
   - {fileID: 21300000, guid: e99e6ab66c4f74377b3778e54e60d55d, type: 3}
   - {fileID: 21300000, guid: b452a3c6e028542cb949500443db2b53, type: 3}
   - {fileID: 21300000, guid: cd2345c6b2fc34d47ade6363907120ab, type: 3}
+  - {fileID: 21300000, guid: a3ba2bc6570724d7e8e7288a7089638a, type: 3}
   - {fileID: 21300000, guid: 7412c9d6dc09947e2974ee0deb1616fe, type: 3}
   - {fileID: 21300000, guid: 123d01379d28946eba6ba95965f54712, type: 3}
   - {fileID: 21300000, guid: ce9711472379d4d278f02557d915ddb2, type: 3}
@@ -410,6 +414,7 @@ SpriteAtlas:
   - {fileID: -3926896667026110074, guid: ccc7a5b8e4f858c45a8aa7359d500269, type: 3}
   - {fileID: -2865398642934436913, guid: ccc7a5b8e4f858c45a8aa7359d500269, type: 3}
   - {fileID: 21300000, guid: d17980d86983f4aaabb1f3bd64c1cf90, type: 3}
+  - {fileID: 21300000, guid: b7aa2ce83349048f1bf66bc649fbcd7e, type: 3}
   - {fileID: 21300000, guid: 69d3bd09d283e42f0a904e74597d7080, type: 3}
   - {fileID: 21300000, guid: ea36b31988caa4af281b8e434f18fa5f, type: 3}
   - {fileID: 21300000, guid: ab52f429f636faa439f1ed2b5154cd2d, type: 3}
@@ -480,7 +485,6 @@ SpriteAtlas:
   - {fileID: 21300000, guid: cbcdb6ebc6ecf42ed911b1c345eb7290, type: 3}
   - {fileID: 21300000, guid: 45c0a9eb3caa3481fa9787d993e81544, type: 3}
   - {fileID: 21300000, guid: 86ce79fb4e2264a15818877bd4c44a77, type: 3}
-  - {fileID: 21300000, guid: c015b57c9036b4873908dacc82154f79, type: 3}
   - {fileID: 21300000, guid: 0bea9c7caa2c1407a98e51fd3c133ad6, type: 3}
   - {fileID: 21300000, guid: 18717ddc3caa144bf9ec4e0ae14205ae, type: 3}
   - {fileID: 21300000, guid: 4d97dc1d77ffd47aebe013f36c9c1c67, type: 3}
@@ -555,6 +559,7 @@ SpriteAtlas:
   - Ballpit tile_0
   - Ballpit tile_1
   - Wall Texture 10
+  - YW Window 1
   - Wall Texture 4
   - Buidling Prop 5
   - Right Door Open
@@ -684,6 +689,7 @@ SpriteAtlas:
   - Balka
   - M Texture 9
   - Wall Texture 8
+  - YW Door
   - Immortality-Theatre-Statue 2
   - RubberBall5
   - Wall Texture 2
@@ -740,6 +746,7 @@ SpriteAtlas:
   - Directions_2
   - Directions_3
   - Silhoette 3
+  - YW Window 2
   - City Back Ground 1
   - Information Stand
   - Just a few posters
@@ -810,7 +817,6 @@ SpriteAtlas:
   - Street Light (Off)
   - Right Door
   - Coffee Shop
-  - Shopping Cart
   - Pier
   - Fancy Elevator
   - Crumbled

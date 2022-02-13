@@ -10,6 +10,7 @@ public class State_BugMom_Alerted : State
     public FOV FieldOfView;
     [SerializeField] private State_BugMom_Patrol PatrolState;
     [SerializeField] private State_BugMom_Freakout FreakoutState;
+    [SerializeField] private GameObject Icon;
 
     [Header("Alertness speed")]
     [SerializeField] private PLAYER_CONTROLS Pepper;
@@ -28,7 +29,7 @@ public class State_BugMom_Alerted : State
     {
         FOVFunction();
 
-        if (FieldOfView.PepperInSight == 600) { return FreakoutState; }
+        if (FieldOfView.PepperInSight == 600) { Icon.SetActive(false); return FreakoutState; }
 
         if (FieldOfView.PepperInSight == 0 && Timer > 0f)
         {

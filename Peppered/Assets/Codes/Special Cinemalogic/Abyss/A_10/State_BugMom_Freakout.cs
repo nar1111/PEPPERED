@@ -43,6 +43,7 @@ public class State_BugMom_Freakout : State
 
     IEnumerator FreakOut()
     {
+        Player.MyRigidBody.velocity = Vector2.zero;
         WHAT_HAVE_I_DONE.Collectibles.Add("BugMom", 1);
         BLines.Show(220f, 1.5f);
         MySceneManager.CutscenePlaying = true;

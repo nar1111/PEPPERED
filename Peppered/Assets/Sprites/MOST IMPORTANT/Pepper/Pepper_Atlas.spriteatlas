@@ -66,7 +66,7 @@ SpriteAtlas:
     - {fileID: 2800000, guid: 9cc3549f427eb4d6b99bf81d922dcb81, type: 3}
     - {fileID: 2800000, guid: dfa6f9d082264498694c684a167ec1bc, type: 3}
     - {fileID: 2800000, guid: cf4b2fe98b4eb46f89858475b48fb2fa, type: 3}
-    totalSpriteSurfaceArea: 3428368
+    totalSpriteSurfaceArea: 3757200
     bindAsDefault: 1
     isAtlasV2: 0
     cachedData: {fileID: 0}
@@ -201,6 +201,19 @@ SpriteAtlas:
   - {fileID: -3713269213470223844, guid: cf4b2fe98b4eb46f89858475b48fb2fa, type: 3}
   - {fileID: 1666373791624021051, guid: cf4b2fe98b4eb46f89858475b48fb2fa, type: 3}
   - {fileID: 8316015870016758763, guid: cf4b2fe98b4eb46f89858475b48fb2fa, type: 3}
+  - {fileID: 4010854279113588354, guid: cf4b2fe98b4eb46f89858475b48fb2fa, type: 3}
+  - {fileID: -2903204232993435592, guid: cf4b2fe98b4eb46f89858475b48fb2fa, type: 3}
+  - {fileID: -3106546950257408838, guid: cf4b2fe98b4eb46f89858475b48fb2fa, type: 3}
+  - {fileID: -7642959381223111124, guid: cf4b2fe98b4eb46f89858475b48fb2fa, type: 3}
+  - {fileID: -5201334165504130360, guid: cf4b2fe98b4eb46f89858475b48fb2fa, type: 3}
+  - {fileID: 5130347419957050725, guid: cf4b2fe98b4eb46f89858475b48fb2fa, type: 3}
+  - {fileID: -6166793533944361930, guid: cf4b2fe98b4eb46f89858475b48fb2fa, type: 3}
+  - {fileID: 6681246811726763354, guid: cf4b2fe98b4eb46f89858475b48fb2fa, type: 3}
+  - {fileID: -6789088469480299162, guid: cf4b2fe98b4eb46f89858475b48fb2fa, type: 3}
+  - {fileID: -6250904036659835025, guid: cf4b2fe98b4eb46f89858475b48fb2fa, type: 3}
+  - {fileID: -3307054553986818408, guid: cf4b2fe98b4eb46f89858475b48fb2fa, type: 3}
+  - {fileID: -437397290125757838, guid: cf4b2fe98b4eb46f89858475b48fb2fa, type: 3}
+  - {fileID: 8090395717407767654, guid: cf4b2fe98b4eb46f89858475b48fb2fa, type: 3}
   - {fileID: 21300000, guid: a64a112ab602044fe82a8555baee3dd1, type: 3}
   - {fileID: 21300000, guid: 8a52d9bba3c5d428d8538e25420965ed, type: 3}
   - {fileID: 21300000, guid: d4fa072c8ba1d4b67910d8792ee2dccd, type: 3}
@@ -424,6 +437,19 @@ SpriteAtlas:
   - Cart Ride_4
   - Cart Ride_5
   - Cart Ride_6
+  - Cart Ride_7
+  - Cart Ride_19
+  - Cart Ride_18
+  - Cart Ride_13
+  - Cart Ride_12
+  - Cart Ride_11
+  - Cart Ride_10
+  - Cart Ride_17
+  - Cart Ride_16
+  - Cart Ride_15
+  - Cart Ride_14
+  - Cart Ride_8
+  - Cart Ride_9
   - Fall Down
   - Broken
   - Paralized
