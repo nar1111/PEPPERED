@@ -403,6 +403,7 @@ public class PLAYER_CONTROLS : MonoBehaviour
     }
 
     #region Misc
+
     #region Death
     public void Death(int AnimNumber, float Time)
     {

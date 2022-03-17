@@ -12,12 +12,15 @@ public class State_Ballpit_Active : State
     [Header("MISC.")]
     [SerializeField] private float JumpForce;
     [SerializeField] private GameObject JupmOutEffect;
+    [SerializeField] private AUDIOMANAGER Audiman;
 
     [Header("TECH STUFF")]
     [SerializeField] private State_Ballpit_Idle IdleState;
     private float fHorizontalDampingWhenStopping = 0.01f;
     private float fHorizontalDampingWhenTurning = 0.01f;
     private float fHorizontalVelocity;
+
+    private bool Move = false;
 
     public override State RunCurrentState()
     {
@@ -31,6 +34,8 @@ public class State_Ballpit_Active : State
             Player.CanMove = true;
             Player.Bounce(JumpForce, 2);
             PlayerDecoy.Play("Invisible");
+            Audiman.StopIt("Ballpit Move");
+            Audiman.Play("Ballpit Jump");
             Instantiate(JupmOutEffect, Player.gameObject.transform.position, Quaternion.identity);
             return IdleState;
         }
@@ -40,6 +45,7 @@ public class State_Ballpit_Active : State
             Player.CanMove = true;
             Player.Wind = true;
             PlayerDecoy.Play("Invisible");
+            Audiman.StopIt("Ballpit Move");
             return IdleState;
         }
         return this;
@@ -61,12 +67,22 @@ public class State_Ballpit_Active : State
         else if (Mathf.Sign(Input.GetAxisRaw("Horizontal")) != Mathf.Sign(fHorizontalVelocity) || MySceneManager.CutscenePlaying == true)
         {
             fHorizontalVelocity *= Mathf.Pow(1f - fHorizontalDampingWhenTurning, Time.fixedDeltaTime * 5f);
-           // PlayerDecoy.Play("Landing");
+            // PlayerDecoy.Play("Landing");
         }
 
         if (MySceneManager.CutscenePlaying == false)
         {
             MyRigidBody.velocity = new Vector2(fHorizontalVelocity, MyRigidBody.velocity.y);
+        }
+
+        if (Input.GetAxisRaw("Horizontal") != 0 && Move == false)
+        {
+            Move = true;
+            Audiman.Play("Ballpit Move");
+        } else if (Input.GetAxisRaw("Horizontal") == 0 && Move == true)
+        {
+            Move = false;
+            Audiman.StopIt("Ballpit Move");
         }
     }
 

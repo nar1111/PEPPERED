@@ -78,6 +78,12 @@ EditorBuildSettings:
     path: Assets/Scenes/Areas/Abyss/A_10.unity
     guid: 81f3cbfdc045c43b5944b2e307525ebf
   - enabled: 1
+    path: Assets/Scenes/Areas/Abyss/A_10.2.unity
+    guid: 062d4ea5518c54e74bf7bc355e3384fb
+  - enabled: 1
+    path: Assets/Scenes/Areas/Abyss/A_11.unity
+    guid: 456a29bb961a4471a8b653b158efc653
+  - enabled: 1
     path: Assets/Scenes/Areas/Abyss/Secret_Level_2.unity
     guid: a7bc1b848964342d2b31e22c95b44a99
   - enabled: 1

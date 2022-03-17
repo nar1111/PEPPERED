@@ -45,6 +45,7 @@ public class State_Book_Choose : State
         {
             Press = true;
             BookSide = 0;
+            AudiMan.Play("Book Choosing");
             if (CurrentBook < Cover.Length - 1)
             {
                 CurrentBook++;
@@ -61,6 +62,7 @@ public class State_Book_Choose : State
         //Flip Flip
         else if (Input.GetAxisRaw("Horizontal") < 0f && Press == false)
         {
+            AudiMan.Play("Book Choosing");
             Press = true;
             BookSide = 2;
             if (CurrentBook > 0)
@@ -99,6 +101,7 @@ public class State_Book_Choose : State
         Press = true;
         BookSide = 0;
         CurrentBook = 0;
+        AudiMan.Play("Book Choosing");
         BookRen.sprite = Cover[CurrentBook];
         StartCoroutine(VisualChange());
     }

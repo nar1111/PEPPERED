@@ -26,10 +26,10 @@ public class Patrolling_Enemy : MonoBehaviour
 	{
         if (Player != null)
         {
-            if (Player.CanMove == true)
-            {
+          //  if (Player.CanMove == true)
+           // {
                 transform.position = Vector2.MoveTowards(transform.position, MoveSpots[CurrentTarget].position, Speed * Time.deltaTime);
-            }
+          //  }
         }
 
         else { transform.position = Vector2.MoveTowards(transform.position, MoveSpots[CurrentTarget].position, Speed * Time.deltaTime); }

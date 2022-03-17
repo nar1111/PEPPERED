@@ -24,6 +24,7 @@ public class State_Cart_Idle : State
             Player.CanMove = false;
             Player.transform.position = transform.position;
             Player.MyRigidBody.velocity = Vector2.zero;
+            Player.transform.parent = MyAnim.gameObject.transform;
             MyAnim.Play("Cart_Land");
             Used = 1f;
             Player.Wind = false;

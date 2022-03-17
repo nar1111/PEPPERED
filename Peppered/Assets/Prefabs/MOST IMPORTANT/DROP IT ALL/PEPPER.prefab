@@ -4960,7 +4960,7 @@ AudioSource:
   Priority: 128
   DopplerLevel: 1
   MinDistance: 1
-  MaxDistance: 500
+  MaxDistance: 1.01
   Pan2D: 0
   rolloffMode: 0
   BypassEffects: 0
@@ -5315,6 +5315,7 @@ MonoBehaviour:
   FallMultiplier: 5
   LowJumpMultiplier: 2.2
   JumpBuffer: 0.1
+  JumpPermission: 1
   SlideSpeed: 7.5
   SlideTime: 0.4
   PunchBox: {fileID: 1456119199414104}

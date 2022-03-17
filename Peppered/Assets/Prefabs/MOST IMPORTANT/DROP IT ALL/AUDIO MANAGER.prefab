@@ -591,6 +591,54 @@ MonoBehaviour:
     Pitch: 1
     Loop: 1
     Source: {fileID: 0}
+  - Name: Book Choosing
+    Clip: {fileID: 8300000, guid: d4d32f25e044247309f486f8f1fa80f8, type: 3}
+    Volume: 0.8
+    Pitch: 1
+    Loop: 0
+    Source: {fileID: 0}
+  - Name: Ballpit Jump
+    Clip: {fileID: 8300000, guid: 22f2cd59ae33041e489c0616a093b1b7, type: 3}
+    Volume: 0.6
+    Pitch: 1
+    Loop: 0
+    Source: {fileID: 0}
+  - Name: Glass Break
+    Clip: {fileID: 8300000, guid: ac2b12006c5fe4e439d46b5808dd3560, type: 3}
+    Volume: 0.6
+    Pitch: 1
+    Loop: 0
+    Source: {fileID: 0}
+  - Name: Ballpit Move
+    Clip: {fileID: 8300000, guid: 63d30c38ac8b343948fae433ad73b7e0, type: 3}
+    Volume: 0.75
+    Pitch: 1
+    Loop: 1
+    Source: {fileID: 0}
+  - Name: Cart Push
+    Clip: {fileID: 8300000, guid: 873855c19ac1943c78ab38e198f42ce2, type: 3}
+    Volume: 0.6
+    Pitch: 1
+    Loop: 0
+    Source: {fileID: 0}
+  - Name: Cart Jump
+    Clip: {fileID: 8300000, guid: 81fce31d088274da492b727d7e720ac8, type: 3}
+    Volume: 0.6
+    Pitch: 1
+    Loop: 0
+    Source: {fileID: 0}
+  - Name: Cart Land
+    Clip: {fileID: 8300000, guid: 167fd9a40ae684f52b74724a1e893038, type: 3}
+    Volume: 0.6
+    Pitch: 1
+    Loop: 0
+    Source: {fileID: 0}
+  - Name: Cart Crash
+    Clip: {fileID: 8300000, guid: bdfa6c1fa8d6c425aa4ca7fa84d90eee, type: 3}
+    Volume: 0.3
+    Pitch: 1
+    Loop: 0
+    Source: {fileID: 0}
 --- !u!1 &627574841459526559
 GameObject:
   m_ObjectHideFlags: 0

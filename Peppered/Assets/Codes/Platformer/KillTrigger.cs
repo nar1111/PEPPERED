@@ -10,7 +10,7 @@ public class KillTrigger : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.CompareTag("Player") && MySceneManager.DeadState == 0)
+        if (collision.CompareTag("Player") && MySceneManager.DeadState == 0 && Player.CanMove == true)
         {
             Player.Death(AnimNum, AnimationTime);
         }

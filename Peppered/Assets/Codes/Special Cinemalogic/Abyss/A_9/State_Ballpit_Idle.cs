@@ -7,6 +7,8 @@ public class State_Ballpit_Idle : State
     [Header("STATES")]
     [SerializeField] private State_Ballpit_Active ActiveState;
 
+    [Header("Evrything Else")]
+    [SerializeField] private AUDIOMANAGER Audiman;
     [SerializeField] private PLAYER_CONTROLS Player;
     [SerializeField] private Animator PlayerDecoy;
     [SerializeField] private GameObject JumpInEffect;
@@ -23,6 +25,7 @@ public class State_Ballpit_Idle : State
             StateChanger = 0;
             if (Player.transform.localScale.x == 1) { PlayerDecoy.transform.localScale = new Vector3(1, 1, 1); }
             else { PlayerDecoy.transform.localScale = new Vector3(-1,1,1); }
+            Audiman.Play("Ballpit Jump");
             return ActiveState;
         }
 

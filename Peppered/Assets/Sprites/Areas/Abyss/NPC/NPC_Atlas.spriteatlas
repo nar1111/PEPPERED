@@ -72,7 +72,17 @@ SpriteAtlas:
     - {fileID: 2800000, guid: 11f99b9bd643a4562bc794ccce1918f9, type: 3}
     - {fileID: 2800000, guid: 71f03e05fbec84e4386ba409f3b9bd49, type: 3}
     - {fileID: 2800000, guid: 13731f0a518e14f019b88a3046d3ae2a, type: 3}
-    totalSpriteSurfaceArea: 2217391
+    - {fileID: 2800000, guid: 90e52ecaa695d40bab8bb10b9a79e438, type: 3}
+    - {fileID: 2800000, guid: 4b40bfc165a314c8d9009b39a81bed39, type: 3}
+    - {fileID: 2800000, guid: e004e29f9be534bf9a70ba62a8bed4a3, type: 3}
+    - {fileID: 2800000, guid: 66bd51b1c544d4f7ca03ecf9d5a9d620, type: 3}
+    - {fileID: 2800000, guid: db2abb7139dc2419b98723e8f287113d, type: 3}
+    - {fileID: 2800000, guid: 9699ea6ec19fc44269c5724e89ec48df, type: 3}
+    - {fileID: 2800000, guid: aa33fb7aaf1024b5fab479a7326ad9a7, type: 3}
+    - {fileID: 2800000, guid: 5c1909690cff149a5ab80ca3c6a67a8b, type: 3}
+    - {fileID: 2800000, guid: c3fdb4c19d66a4ce6b1cea9044a9326f, type: 3}
+    - {fileID: 2800000, guid: 54176c95d8b8d4079a2142409c3b321d, type: 3}
+    totalSpriteSurfaceArea: 3837175
     bindAsDefault: 1
     isAtlasV2: 0
     cachedData: {fileID: 0}
@@ -88,6 +98,22 @@ SpriteAtlas:
   - {fileID: -4424558205420328159, guid: c38963e03911f4b0ea2bbc8561628135, type: 3}
   - {fileID: -5768531071441815179, guid: c38963e03911f4b0ea2bbc8561628135, type: 3}
   - {fileID: 21300000, guid: 27d30731753274b83b309b81375e0143, type: 3}
+  - {fileID: 4888426964121247831, guid: db2abb7139dc2419b98723e8f287113d, type: 3}
+  - {fileID: -8626791467260120499, guid: db2abb7139dc2419b98723e8f287113d, type: 3}
+  - {fileID: 4625969973225372778, guid: db2abb7139dc2419b98723e8f287113d, type: 3}
+  - {fileID: -5523537769478252378, guid: 66bd51b1c544d4f7ca03ecf9d5a9d620, type: 3}
+  - {fileID: -5919974748318966705, guid: 66bd51b1c544d4f7ca03ecf9d5a9d620, type: 3}
+  - {fileID: -7518669332535093435, guid: 66bd51b1c544d4f7ca03ecf9d5a9d620, type: 3}
+  - {fileID: -6056333178434169388, guid: 66bd51b1c544d4f7ca03ecf9d5a9d620, type: 3}
+  - {fileID: 38233432735699725, guid: c3fdb4c19d66a4ce6b1cea9044a9326f, type: 3}
+  - {fileID: -4931309734781704910, guid: c3fdb4c19d66a4ce6b1cea9044a9326f, type: 3}
+  - {fileID: -5784155812537239403, guid: c3fdb4c19d66a4ce6b1cea9044a9326f, type: 3}
+  - {fileID: -6771868307773259904, guid: c3fdb4c19d66a4ce6b1cea9044a9326f, type: 3}
+  - {fileID: 2813232427643321355, guid: 4b40bfc165a314c8d9009b39a81bed39, type: 3}
+  - {fileID: 1240004547915421170, guid: 4b40bfc165a314c8d9009b39a81bed39, type: 3}
+  - {fileID: -8144529049060774814, guid: 4b40bfc165a314c8d9009b39a81bed39, type: 3}
+  - {fileID: 4841093466901428157, guid: 4b40bfc165a314c8d9009b39a81bed39, type: 3}
+  - {fileID: 7169970652978108406, guid: 4b40bfc165a314c8d9009b39a81bed39, type: 3}
   - {fileID: 590205317564339284, guid: b69a3ad2d50aa4ba3bf1a2bd481b75ee, type: 3}
   - {fileID: 9014238776322649331, guid: b69a3ad2d50aa4ba3bf1a2bd481b75ee, type: 3}
   - {fileID: -5793919558863183073, guid: b69a3ad2d50aa4ba3bf1a2bd481b75ee, type: 3}
@@ -126,6 +152,10 @@ SpriteAtlas:
   - {fileID: -1819214681056430070, guid: 6546a935d488247739affd7af6cf7d38, type: 3}
   - {fileID: -7709057502972477860, guid: 6546a935d488247739affd7af6cf7d38, type: 3}
   - {fileID: 3287505800185660575, guid: 6546a935d488247739affd7af6cf7d38, type: 3}
+  - {fileID: 7176040397177170856, guid: 54176c95d8b8d4079a2142409c3b321d, type: 3}
+  - {fileID: 2970138904875644715, guid: 54176c95d8b8d4079a2142409c3b321d, type: 3}
+  - {fileID: 8934733583810336962, guid: 54176c95d8b8d4079a2142409c3b321d, type: 3}
+  - {fileID: -681273507883222584, guid: 54176c95d8b8d4079a2142409c3b321d, type: 3}
   - {fileID: -6948064228651535238, guid: 41002ce5b0dd946089f42f492fc817e1, type: 3}
   - {fileID: -9220816947620158919, guid: 41002ce5b0dd946089f42f492fc817e1, type: 3}
   - {fileID: -5810375582054787288, guid: 41002ce5b0dd946089f42f492fc817e1, type: 3}
@@ -155,6 +185,9 @@ SpriteAtlas:
   - {fileID: -5877692844337830926, guid: 250e4e08c8ce94a3fb80758fb92a0ba3, type: 3}
   - {fileID: -5427775785963093902, guid: 250e4e08c8ce94a3fb80758fb92a0ba3, type: 3}
   - {fileID: 21300000, guid: 708a6788ee602477b8a5073146bc0a09, type: 3}
+  - {fileID: -4496133914164191025, guid: 5c1909690cff149a5ab80ca3c6a67a8b, type: 3}
+  - {fileID: 5926662475947260276, guid: 5c1909690cff149a5ab80ca3c6a67a8b, type: 3}
+  - {fileID: 4467260319525251968, guid: 5c1909690cff149a5ab80ca3c6a67a8b, type: 3}
   - {fileID: -6912117356846889136, guid: cf49a9791dd1d445991681cb441b3ba4, type: 3}
   - {fileID: 4898152969690749695, guid: cf49a9791dd1d445991681cb441b3ba4, type: 3}
   - {fileID: -2388433408105505142, guid: cf49a9791dd1d445991681cb441b3ba4, type: 3}
@@ -170,7 +203,13 @@ SpriteAtlas:
   - {fileID: 297507142941549723, guid: fa00ac6a6b88a4629b455b99903e27ba, type: 3}
   - {fileID: 4215944217031165610, guid: fa00ac6a6b88a4629b455b99903e27ba, type: 3}
   - {fileID: -6462476825442502614, guid: fa00ac6a6b88a4629b455b99903e27ba, type: 3}
+  - {fileID: 5118968922570120347, guid: aa33fb7aaf1024b5fab479a7326ad9a7, type: 3}
+  - {fileID: 576383164770820935, guid: aa33fb7aaf1024b5fab479a7326ad9a7, type: 3}
+  - {fileID: 2793568342789223870, guid: aa33fb7aaf1024b5fab479a7326ad9a7, type: 3}
   - {fileID: 21300000, guid: f67c6a9a6b0564ad981efe34c17934d4, type: 3}
+  - {fileID: 5976860492151549310, guid: 90e52ecaa695d40bab8bb10b9a79e438, type: 3}
+  - {fileID: 8185641841597457555, guid: 90e52ecaa695d40bab8bb10b9a79e438, type: 3}
+  - {fileID: -2803992767890689072, guid: 90e52ecaa695d40bab8bb10b9a79e438, type: 3}
   - {fileID: 21300000, guid: bd28c5faad8c046dbba54c30f0205eb4, type: 3}
   - {fileID: 5051508904922651275, guid: 11f99b9bd643a4562bc794ccce1918f9, type: 3}
   - {fileID: 3678612094793333745, guid: 11f99b9bd643a4562bc794ccce1918f9, type: 3}
@@ -195,6 +234,8 @@ SpriteAtlas:
   - {fileID: -8952872100758227040, guid: 72fee89da6dc24c9a9240d1e797ac5d1, type: 3}
   - {fileID: 8943732022327557959, guid: 72fee89da6dc24c9a9240d1e797ac5d1, type: 3}
   - {fileID: 1780782773100000253, guid: 72fee89da6dc24c9a9240d1e797ac5d1, type: 3}
+  - {fileID: 4845622647964118114, guid: 9699ea6ec19fc44269c5724e89ec48df, type: 3}
+  - {fileID: -4161601870887455403, guid: 9699ea6ec19fc44269c5724e89ec48df, type: 3}
   - {fileID: 21300000, guid: 603ca7ee5b1034ac78e50aeffc007ce3, type: 3}
   - {fileID: 21300000, guid: 9df0920fd3f0c468ab4f7b40837284b2, type: 3}
   - {fileID: 1013974454648684250, guid: 60dd9d4fdba514e4080107afb10b4c4d, type: 3}
@@ -204,6 +245,16 @@ SpriteAtlas:
   - {fileID: 6326833108395135062, guid: 60dd9d4fdba514e4080107afb10b4c4d, type: 3}
   - {fileID: 8890133865685686797, guid: 60dd9d4fdba514e4080107afb10b4c4d, type: 3}
   - {fileID: -8556834905255440519, guid: 60dd9d4fdba514e4080107afb10b4c4d, type: 3}
+  - {fileID: 6822444847040946414, guid: e004e29f9be534bf9a70ba62a8bed4a3, type: 3}
+  - {fileID: 3723713785712483605, guid: e004e29f9be534bf9a70ba62a8bed4a3, type: 3}
+  - {fileID: -6420404570076214569, guid: e004e29f9be534bf9a70ba62a8bed4a3, type: 3}
+  - {fileID: 1307927049901976325, guid: e004e29f9be534bf9a70ba62a8bed4a3, type: 3}
+  - {fileID: 8631970546070597534, guid: e004e29f9be534bf9a70ba62a8bed4a3, type: 3}
+  - {fileID: 4243788446014121075, guid: e004e29f9be534bf9a70ba62a8bed4a3, type: 3}
+  - {fileID: 4794606147802164919, guid: e004e29f9be534bf9a70ba62a8bed4a3, type: 3}
+  - {fileID: -5855677484426328765, guid: e004e29f9be534bf9a70ba62a8bed4a3, type: 3}
+  - {fileID: -3500996068881459170, guid: e004e29f9be534bf9a70ba62a8bed4a3, type: 3}
+  - {fileID: -8983502339160704386, guid: e004e29f9be534bf9a70ba62a8bed4a3, type: 3}
   m_PackedSpriteNamesToIndex:
   - Sebastion The System Fighter_1
   - Sebastion The System Fighter_0
@@ -215,6 +266,22 @@ SpriteAtlas:
   - Dont ask her about minorities_5
   - Dont ask her about minorities_4
   - Bouncer Eyes
+  - Random Dude In His Random Room_0
+  - Random Dude In His Random Room_1
+  - Random Dude In His Random Room_2
+  - Bull Bro Additional Animation_1
+  - Bull Bro Additional Animation_0
+  - Bull Bro Additional Animation_3
+  - Bull Bro Additional Animation_2
+  - Prison NPC_2
+  - Prison NPC_3
+  - Prison NPC_0
+  - Prison NPC_1
+  - Merdeka's Mom_2
+  - Merdeka's Mom_3
+  - Merdeka's Mom_0
+  - Merdeka's Mom_1
+  - Merdeka's Mom_4
   - Nosy The Nose Man_1
   - Nosy The Nose Man_0
   - Nosy The Nose Man_3
@@ -253,6 +320,10 @@ SpriteAtlas:
   - Scarlett_0
   - Scarlett_1
   - Scarlett_2
+  - Merdeka TV Faces_1
+  - Merdeka TV Faces_0
+  - Merdeka TV Faces_3
+  - Merdeka TV Faces_2
   - No, he's not a pimp_2
   - No, he's not a pimp_3
   - No, he's not a pimp_0
@@ -282,6 +353,9 @@ SpriteAtlas:
   - Ottawana_1
   - Ottawana_0
   - Bouncer Hand 3
+  - Bull Bro 4_2
+  - Bull Bro 4_0
+  - Bull Bro 4_1
   - Cynthia Stand_0
   - Cynthia Stand_1
   - Cynthia Stand_2
@@ -297,7 +371,13 @@ SpriteAtlas:
   - Granma Turtleneck_0
   - Granma Turtleneck_5
   - Granma Turtleneck_4
+  - Bull Bro 3_1
+  - Bull Bro 3_0
+  - Bull Bro 3_2
   - Bouncer Hand 1
+  - Merdeka's Dad_0
+  - Merdeka's Dad_1
+  - Merdeka's Dad_2
   - CrowdGroup4
   - Bug Kids_3
   - Bug Kids_2
@@ -322,6 +402,8 @@ SpriteAtlas:
   - Bug Mom Talk_0
   - Bug Mom Talk_3
   - Bug Mom Talk_2
+  - God Of Death Hands New_1
+  - God Of Death Hands New_0
   - Homeless Man
   - CrowdGroup1
   - Barista1_1
@@ -331,6 +413,16 @@ SpriteAtlas:
   - Barista1_5
   - Barista1_4
   - Barista1_6
+  - Little Merdeka_9
+  - Little Merdeka_8
+  - Little Merdeka_3
+  - Little Merdeka_2
+  - Little Merdeka_1
+  - Little Merdeka_0
+  - Little Merdeka_7
+  - Little Merdeka_6
+  - Little Merdeka_5
+  - Little Merdeka_4
   m_RenderDataMap: {}
   m_Tag: NPC_Atlas
   m_IsVariant: 0

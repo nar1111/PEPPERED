@@ -20,7 +20,7 @@
       "dependencies": {}
     },
     "com.unity.2d.tilemap.extras": {
-      "version": "file:/Users/mostovschikovvasiliy/Documents/Peppered/[PEPPERED]/[UNITY PROJECT]/2d-extras-1.4.0",
+      "version": "file:/Users/mostovschikovvasiliy/Documents/Peppered/[UNITY PROJECT]/2d-extras-1.4.0",
       "depth": 0,
       "source": "local",
       "dependencies": {

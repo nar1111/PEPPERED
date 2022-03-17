@@ -15,6 +15,7 @@ public class State_Cart_Jump : State
     [SerializeField] private LayerMask Ground;
     [SerializeField] private bool Grounded;
     private float MyDir;
+    private bool MaxBoostVar;
 
 
     [Header("Cosmetics")]
@@ -38,8 +39,10 @@ public class State_Cart_Jump : State
         if (Grounded)
         {
             if (HangTime > 0.5f) { Instantiate(LandingDust, transform.position, Quaternion.identity); }
-            MyRigidbody.velocity = new Vector2(MyRigidbody.velocity.x / 2, MyRigidbody.velocity.y);
+            MyRigidbody.velocity = new Vector2(MyRigidbody.velocity.x / 3, MyRigidbody.velocity.y);
+            CartRide.Boosting = false;
             MyAnim.Play("Cart_Land");
+            CartRide.JumpSFX();
             return CartRide;
         }
 
@@ -55,16 +58,18 @@ public class State_Cart_Jump : State
     {
         HangTime = 0f;
         MyDir = Direction;
+        MaxBoostVar = MaxBoost;
         if (MaxBoost)
         {
-            MyRigidbody.AddForce(MyRigidbody.transform.up * 18, ForceMode2D.Impulse);
+            MyRigidbody.velocity = Vector2.zero;
+            MyRigidbody.AddForce(MyRigidbody.transform.up * 34, ForceMode2D.Impulse);
             if (Direction > 0)
             {
-                MyRigidbody.AddForce(MyRigidbody.transform.right * 12, ForceMode2D.Impulse);
+                MyRigidbody.AddForce(MyRigidbody.transform.right * 30, ForceMode2D.Impulse);
             }
             else
             {
-                MyRigidbody.AddForce(-MyRigidbody.transform.right * 12, ForceMode2D.Impulse);
+                MyRigidbody.AddForce(-MyRigidbody.transform.right * 30, ForceMode2D.Impulse);
             }
         }
         else
