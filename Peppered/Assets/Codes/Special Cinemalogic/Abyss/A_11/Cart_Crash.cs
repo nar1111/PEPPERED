@@ -37,6 +37,7 @@ public class Cart_Crash : MonoBehaviour
             Player.CanMove = true;
             Player.Wind = true;
             Audiman.Play("Cart Crash");
+            MySceneManager.DontKillMe = 0;
             Destroy(gameObject);
         }
         else

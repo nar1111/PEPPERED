@@ -20,6 +20,7 @@ public class State_Cart_Idle : State
 
         if (Vector2.Distance(Player.gameObject.transform.position, transform.position) < TriggerRaidus && Player.MyRigidBody.velocity.y < -0.1f && Used == 0 && Player.CanMove == true)
         {
+            MySceneManager.DontKillMe = 1;
             Player.MyAnim.Play("Invisible");
             Player.CanMove = false;
             Player.transform.position = transform.position;

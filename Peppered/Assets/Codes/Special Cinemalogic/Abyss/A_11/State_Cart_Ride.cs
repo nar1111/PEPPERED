@@ -74,6 +74,7 @@ public class State_Cart_Ride : State
             #region Get Out
             if (Input.GetButtonDown("Jump") && MySceneManager.CutscenePlaying == false)
             {
+                MySceneManager.DontKillMe = 0;
                 Player.gameObject.transform.localScale = transform.localScale;
                 Player.Wind = true;
                 Player.gameObject.transform.parent = null;

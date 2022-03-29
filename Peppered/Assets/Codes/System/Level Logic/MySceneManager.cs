@@ -13,6 +13,7 @@ public class MySceneManager : MonoBehaviour
     public static int Abyss_State = 0;
     public static int Cynthia = 0;
     public static int Merdeka = 0;
+    public static int DontKillMe = 0;
 
     #region Death stuff
     [SerializeField]

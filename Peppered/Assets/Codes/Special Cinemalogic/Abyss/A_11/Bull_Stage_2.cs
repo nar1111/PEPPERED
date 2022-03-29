@@ -10,6 +10,8 @@ public class Bull_Stage_2 : State
     [SerializeField] private Bull_Stage_3 Stage3;
     [SerializeField] private A_11 A11;
     [SerializeField] private AUDIOMANAGER Audiman;
+    [SerializeField] private AudioHighPassFilter AudiFilter;
+    private MySceneManager sceneman;
 
     //Tech Stuff
     private int MyStage = 0;
@@ -160,6 +162,10 @@ public class Bull_Stage_2 : State
             Bulls[0].SetActive(false);
             Audiman.Play("Rock Impact");
             Audiman.Play("Battle Start");
+
+            sceneman = FindObjectOfType<MySceneManager>();
+            AudiFilter = sceneman.GetComponent<AudioHighPassFilter>();
+            AudiFilter.enabled = true;
             if (Player.transform.parent != null)
             {
                 State_Cart_Ride MyRide = Player.transform.parent.GetComponentInChildren<State_Cart_Ride>();

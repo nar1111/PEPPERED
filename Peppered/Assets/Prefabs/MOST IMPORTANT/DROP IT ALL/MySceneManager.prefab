@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 114854309061894304}
   - component: {fileID: 3085424643750991679}
   - component: {fileID: 1652049410}
+  - component: {fileID: 5121863164931380116}
   m_Layer: 0
   m_Name: MySceneManager
   m_TagString: SceneManager
@@ -73,6 +74,7 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 3b5e7e429bf574c5b9191fda82b5cc5a, type: 3}
   - {fileID: 8300000, guid: 47033c89fbca24f56aa7c8a0891d25fe, type: 3}
   - {fileID: 8300000, guid: 139bfe885e90249e88dd182f1146c3b9, type: 3}
+  - {fileID: 8300000, guid: 7cf3771fc141943f2b9ad76619d0f9b4, type: 3}
   RespawnLocationTrack: 0
 --- !u!82 &3085424643750991679
 AudioSource:
@@ -266,6 +268,16 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!165 &5121863164931380116
+AudioHighPassFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1767061641428884}
+  m_Enabled: 0
+  m_CutoffFrequency: 500
+  m_HighpassResonanceQ: 6
 --- !u!1 &4040007948801091356
 GameObject:
   m_ObjectHideFlags: 0

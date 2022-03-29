@@ -25,7 +25,7 @@ public class Bull_Stage_1 : State
     private AudioSource[] SFX;
     [SerializeField]
     private AUDIOMANAGER AudioMan;
-    [SerializeField]
+
     private MySceneManager SceneMan;
     private bool Done = false;
 
@@ -128,8 +128,11 @@ public class Bull_Stage_1 : State
             Player.gameObject.transform.localScale = new Vector3(1, 1, 1);
         }
 
-
+        SceneMan = FindObjectOfType<MySceneManager>();
+        SceneMan.MStop();
+        SceneMan.MChange(18, 0.65f);
         yield return new WaitForSeconds(2f);
+        SceneMan.MPlay();
         MySceneManager.CutscenePlaying = false;
         Stuff[0].SetActive(false);
         AdditionalText.text = "";

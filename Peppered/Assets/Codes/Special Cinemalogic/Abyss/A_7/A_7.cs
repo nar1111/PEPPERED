@@ -712,6 +712,329 @@ public class A_7 : MonoBehaviour
         MySceneManager.CutscenePlaying = false;
     }
 
+    public void ArrestScene() { StartCoroutine(Arrest()); }
+
+    IEnumerator Arrest()
+    {
+        CharAnim[10].Play("Mutilated_Idle");
+        MySceneManager.CutscenePlaying = true;
+        yield return new WaitForSeconds(1f);
+        CharAnim[9].Play("TakeRadio");
+        yield return new WaitForSeconds(1.5f);
+
+
+        LineNum = 1;
+        DeclareLines();
+        #region Put things in
+        for (int i = 0; i < LineNum; i++)
+        {
+            Speed[i] = 0.06f;
+            Voice[i] = SFX[5];
+            TalkAnim[i] = CharAnim[9];
+        }
+        #endregion
+        Line[0] = "— Chief. Perpetrator located. Again.";
+        #region Go
+        DLMan.DILines = Line;
+        DLMan.DITextSpeed = Speed;
+        DLMan.DIVoice = Voice;
+        DLMan.Noise = Noise;
+        DLMan.WhoTalks = TalkAnim;
+        DLMan.DIStarter();
+        #endregion
+        while (DLMan.Playing) { yield return null; }
+
+
+        Cams[6].SetActive(false);
+        Cams[11].SetActive(true);
+        yield return new WaitForSeconds(1.5f);
+
+
+        #region Put things in
+        for (int i = 0; i < LineNum; i++)
+        {
+            Speed[i] = 0.2f;
+            Voice[i] = SFX[0];
+            TalkAnim[i] = null;
+        }
+        #endregion
+        Line[0] = "— Y E S";
+        #region Go
+        DLMan.DILines = Line;
+        DLMan.DITextSpeed = Speed;
+        DLMan.DIVoice = Voice;
+        DLMan.Noise = Noise;
+        DLMan.WhoTalks = TalkAnim;
+        DLMan.DIStarter();
+        #endregion
+        while (DLMan.Playing) { yield return null; }
+        yield return new WaitForSeconds(1f);
+        CharAnim[9].Play("Merdeka Squat");
+        yield return new WaitForSeconds(2f);
+
+
+        LineNum = 3;
+        DeclareLines();
+        #region Put things in
+        for (int i = 0; i < LineNum; i++)
+        {
+            Speed[i] = 0.06f;
+            Voice[i] = SFX[5];
+            TalkAnim[i] = CharAnim[9];
+        }
+        #endregion
+        Line[0] = "— Hey, perp.";
+        Line[1] = "— I told you. Rules are rules.";
+        Line[2] = "— Nothing good happens from complicating your life. Or the life of others.";
+        #region Go
+        DLMan.DILines = Line;
+        DLMan.DITextSpeed = Speed;
+        DLMan.DIVoice = Voice;
+        DLMan.Noise = Noise;
+        DLMan.WhoTalks = TalkAnim;
+        DLMan.DIStarter();
+        #endregion
+        while (DLMan.Playing) { yield return null; }
+
+
+        Description[0].text = "Your life lessons mean very little to me. Just do what you gotta do.";
+        Description[1].text = "Here's a thought: you could, you know, do at least something to help stop the God of Death. It's YOUR problem as well.";
+        DLMan.LeftString = "[TELL HER OFF]";
+        DLMan.RightString = "[ASK FOR HELP]";
+        DLMan.ChoiceStarter();
+        while (BChose.ButtonChoice == 0) { yield return null; }
+
+
+        if (BChose.ButtonChoice == 1)
+        {
+            yield return new WaitForSeconds(1f);
+            LineNum = 2;
+            DeclareLines();
+            #region Put things in
+            for (int i = 0; i < LineNum; i++)
+            {
+                Speed[i] = 0.06f;
+                Voice[i] = SFX[5];
+                TalkAnim[i] = CharAnim[9];
+            }
+            #endregion
+            Line[0] = "— Copy that.";
+            Line[1] = "— We'll have plenty of time to debate in court.";
+            #region Go
+            DLMan.DILines = Line;
+            DLMan.DITextSpeed = Speed;
+            DLMan.DIVoice = Voice;
+            DLMan.Noise = Noise;
+            DLMan.WhoTalks = TalkAnim;
+            DLMan.DIStarter();
+            #endregion
+            while (DLMan.Playing) { yield return null; }
+        } else
+        {
+            yield return new WaitForSeconds(1f);
+            LineNum = 2;
+            DeclareLines();
+            #region Put things in
+            for (int i = 0; i < LineNum; i++)
+            {
+                Speed[i] = 0.06f;
+                Voice[i] = SFX[5];
+                TalkAnim[i] = CharAnim[9];
+            }
+            #endregion
+            Line[0] = "— Mmm-hmm.";
+            Line[1] = "— Any chance you have a plan that doesn't involve:";
+            #region Go
+            DLMan.DILines = Line;
+            DLMan.DITextSpeed = Speed;
+            DLMan.DIVoice = Voice;
+            DLMan.Noise = Noise;
+            DLMan.WhoTalks = TalkAnim;
+            DLMan.DIStarter();
+            #endregion
+            while (DLMan.Playing) { yield return null; }
+            CharAnim[9].Play("Merdeka Squat Notebook");
+            yield return new WaitForSeconds(1f);
+
+
+            LineNum = 3;
+            DeclareLines();
+            #region Put things in
+            for (int i = 0; i < LineNum; i++)
+            {
+                Speed[i] = 0.06f;
+                Voice[i] = SFX[5];
+                TalkAnim[i] = CharAnim[9];
+            }
+            #endregion
+            Line[0] = "— Stealing?";
+            if (MySceneManager.Cynthia != 3) { Line[1] = "— Throwing a person off a rooftop?"; }
+            else { Line[1] = "— Disturbing and harassing civilians?";}
+            Line[2] = "— Causing private and city property damage?";
+            #region Go
+            DLMan.DILines = Line;
+            DLMan.DITextSpeed = Speed;
+            DLMan.DIVoice = Voice;
+            DLMan.Noise = Noise;
+            DLMan.WhoTalks = TalkAnim;
+            DLMan.DIStarter();
+            #endregion
+            while (DLMan.Playing) { yield return null; }
+            CharAnim[9].Play("Merdeka Squat");
+
+
+            LineNum = 2;
+            DeclareLines();
+            #region Put things in
+            for (int i = 0; i < LineNum; i++)
+            {
+                Speed[i] = 0.06f;
+                Voice[i] = SFX[5];
+                TalkAnim[i] = CharAnim[9];
+            }
+            #endregion
+            Line[0] = "— Or deciding to put the fate of thousands of people in your own hands?";
+            Line[1] = "— Got anything like that?";
+            #region Go
+            DLMan.DILines = Line;
+            DLMan.DITextSpeed = Speed;
+            DLMan.DIVoice = Voice;
+            DLMan.Noise = Noise;
+            DLMan.WhoTalks = TalkAnim;
+            DLMan.DIStarter();
+            #endregion
+            while (DLMan.Playing) { yield return null; }
+            yield return new WaitForSeconds(2f);
+
+            LineNum = 1;
+            DeclareLines();
+            #region Put things in
+            for (int i = 0; i < LineNum; i++)
+            {
+                Speed[i] = 0.06f;
+                Voice[i] = SFX[5];
+                TalkAnim[i] = CharAnim[9];
+            }
+            #endregion
+            Line[0] = "— Copy that.";
+            #region Go
+            DLMan.DILines = Line;
+            DLMan.DITextSpeed = Speed;
+            DLMan.DIVoice = Voice;
+            DLMan.Noise = Noise;
+            DLMan.WhoTalks = TalkAnim;
+            DLMan.DIStarter();
+            #endregion
+            while (DLMan.Playing) { yield return null; }
+        }
+
+
+        CharAnim[9].Play("Idle3");
+        yield return new WaitForSeconds(1f);
+        Cams[11].SetActive(false);
+        Cams[13].SetActive(true);
+        BLines.Show(220f, 0f);
+
+
+        LineNum = 1;
+        DeclareLines();
+        #region Put things in
+        for (int i = 0; i < LineNum; i++)
+        {
+            Speed[i] = 0.06f;
+            Voice[i] = SFX[5];
+            TalkAnim[i] = CharAnim[9];
+        }
+        #endregion
+        Line[0] = "— You have the right to remain silent.";
+        #region Go
+        DLMan.DILines = Line;
+        DLMan.DITextSpeed = Speed;
+        DLMan.DIVoice = Voice;
+        DLMan.Noise = Noise;
+        DLMan.WhoTalks = TalkAnim;
+        DLMan.DIStarter();
+        #endregion
+        while (DLMan.Playing) { yield return null; }
+
+
+        Cams[13].SetActive(false);
+        Cams[14].SetActive(true);
+
+
+        #region Put things in
+        for (int i = 0; i < LineNum; i++)
+        {
+            Speed[i] = 0.06f;
+            Voice[i] = SFX[5];
+            TalkAnim[i] = CharAnim[9];
+        }
+        #endregion
+        Line[0] = "— Everything you say and everything you ever did will 100% be used against you in the court.";
+        #region Go
+        DLMan.DILines = Line;
+        DLMan.DITextSpeed = Speed;
+        DLMan.DIVoice = Voice;
+        DLMan.Noise = Noise;
+        DLMan.WhoTalks = TalkAnim;
+        DLMan.DIStarter();
+        #endregion
+        while (DLMan.Playing) { yield return null; }
+
+        Cams[14].SetActive(false);
+        Cams[15].SetActive(true);
+
+
+        #region Put things in
+        for (int i = 0; i < LineNum; i++)
+        {
+            Speed[i] = 0.06f;
+            Voice[i] = SFX[5];
+            TalkAnim[i] = CharAnim[9];
+        }
+        #endregion
+        Line[0] = "— You butt will be touched. By everyone. In the court.";
+        #region Go
+        DLMan.DILines = Line;
+        DLMan.DITextSpeed = Speed;
+        DLMan.DIVoice = Voice;
+        DLMan.Noise = Noise;
+        DLMan.WhoTalks = TalkAnim;
+        DLMan.DIStarter();
+        #endregion
+        while (DLMan.Playing) { yield return null; }
+
+
+        Cams[15].SetActive(false);
+        Cams[12].SetActive(true);
+        yield return new WaitForSeconds(2f);
+
+
+        CharAnim[9].Play("Idle1");
+
+
+        LineNum = 1;
+        DeclareLines();
+        #region Put things in
+        for (int i = 0; i < LineNum; i++)
+        {
+            Speed[i] = 0.06f;
+            Voice[i] = SFX[5];
+            TalkAnim[i] = CharAnim[9];
+        }
+        #endregion
+        Line[0] = "— We're going to the court.";
+        #region Go
+        DLMan.DILines = Line;
+        DLMan.DITextSpeed = Speed;
+        DLMan.DIVoice = Voice;
+        DLMan.Noise = Noise;
+        DLMan.WhoTalks = TalkAnim;
+        DLMan.DIStarter();
+        #endregion
+        while (DLMan.Playing) { yield return null; }
+    }
+
     #region It's donskie
     public void CutsceneDone() { Done = true; }
     #endregion

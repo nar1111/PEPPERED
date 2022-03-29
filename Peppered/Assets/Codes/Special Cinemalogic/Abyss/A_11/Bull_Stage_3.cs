@@ -10,6 +10,8 @@ public class Bull_Stage_3 : State
     [SerializeField] private GameObject[] Bulls;
     [SerializeField] private Transform[] DropPoints;
     [SerializeField] private Bull_Stage_4 Stage4;
+    [SerializeField] private AudioHighPassFilter AudiFilter;
+    private MySceneManager sceneman;
 
     [Header("Navigation")]
     [SerializeField] private A_11 A11;
@@ -71,6 +73,9 @@ public class Bull_Stage_3 : State
 
     public void StartTheChase()
     {
+        sceneman = FindObjectOfType<MySceneManager>();
+        AudiFilter = sceneman.GetComponent<AudioHighPassFilter>();
+        AudiFilter.enabled = false;
         MyStage = 1;
         MyAnims[0].Play("Bull Bro Idle");
         Bulls[0].SetActive(true);

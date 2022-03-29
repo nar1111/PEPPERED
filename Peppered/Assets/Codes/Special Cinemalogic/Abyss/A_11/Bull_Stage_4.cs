@@ -27,6 +27,9 @@ public class Bull_Stage_4 : State
     [SerializeField] private float Speed;
     private bool Done = false;
 
+    private AudioHighPassFilter AudiFilter;
+    private MySceneManager sceneman;
+
     private int ChargeNum = 0;
     private float Timer;
     private float StartTimer = 2f;
@@ -231,14 +234,20 @@ public class Bull_Stage_4 : State
         BLines.Show(100f, 0f);
         BLines.Show(220f, 2.5f);
         Cutscene[0].Play();
+        sceneman = FindObjectOfType<MySceneManager>();
+        AudiFilter = sceneman.GetComponent<AudioHighPassFilter>();
+        AudiFilter.enabled = true;
         while (Done == false) { yield return null; }
 
+        sceneman.MPause();
         Stuff[2].SetActive(true);
         Stuff[3].SetActive(true);
         Stuff[0].SetActive(true);
         AdditionalText.text = "jump.";
         CharAnim[1].Play("Bro 2 Chant");
         yield return new WaitForSeconds(1.5f);
+        sceneman.MPlay();
+        AudiFilter.enabled = false;
         Stuff[0].SetActive(false);
         BLines.Hide(0f);
         AdditionalText.text = "";
